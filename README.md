@@ -1,6 +1,6 @@
 [instacalc.com](https://instacalc.com/)
 
-Goal: A fast, easy, shareable online calculator. 
+A fast, easy, shareable online calculator. 
 
 * Fast: Results appear instantly as you type.
 * Easy: Use natural language where possible (`50k + 3,500`).
