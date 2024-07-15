@@ -4,18 +4,23 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Instacalc Help Center",
   description: "Guides / Reference / Examples",
+  appearance: 'dark',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'instacalc.com', link: 'https://instacalc.com' },
+     /* 
       { text: 'Quickstart', link: '/quickstart' }, 
+       */
       { text: 'Reference', link: '/reference' },
       { text: 'Examples', link: '/examples' }
     ],
 
+    logo: 'https://instacalc.com/img/icons/ios/256.png',
+
     sidebar: [
       {
-        text: 'Sections',
+        /*text: 'Sections', */
         items: [
           { text: 'Reference', link: '/reference' },
           { text: 'Examples', link: '/examples' },

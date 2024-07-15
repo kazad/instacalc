@@ -1,49 +1,55 @@
-Instacalc hits my personal sweet spot for a calculation tool:
+# Instacalc compared to other tools
 
-* Easy access (web-based, zero install)
+Instacalc is my sweet spot for a calculation tool:
+
+* Easy access: web-based, no install
 * Anonymous sharing / embeds
 * Powerful yet forgiving syntax
-* Can hide complexity (show editable parameters, hide complex calculations)
-* User-friendly (reasonably pretty themes)
+* Hide complex calculations (and still show input parameters)
+* User-friendly (large fonts, reasonably pretty, not a scary grid)
 
 ![image](https://github.com/kazad/instacalc/assets/115572/ed7d048e-1d99-421b-90c7-b3647ad15a9e)
 
+Here's a few thoughts on finding the best number crunching tool for the job..
 
-A few thoughts on finding the best tool for the job...
-
-| Tool                   | Features | Ease of Use | Share/embed |
+| Tool                   | Features | Ease of Use | Share/Embed |
 | ---------------------- | -------- | ----------- | ----------- |
 | Basic Calculators      | Low      | High        | Low         |
 | Instacalc              | Med/High | Med/High    | High        |
 | Text-based Scratchpads | Med/High | Med/High    | Low         |
-| Spreadsheets           | High     | Low         | Low         |
+| Spreadsheets           | Med/High | Low         | Low         |
 | Programming Tools      | High     | Low         | Low         |
 
-## Basic: Calculators
+## Easy: Calculators
 
 <img src="https://github.com/kazad/instacalc/assets/115572/f9582570-6020-48cb-988d-2553274f2ae6" height="200">
 
-Ah, the old trusty calculator.
+Here's our trusty pocket calculator.
 
-* Likes: Simple, easy to read, familiar, preinstalled
-* Wishlist: Made for one-time calculations, but not typos/previous results/multi-step calculations. Hard to share editable version with thought process, just copy-paste result.
+* Likes: Simple, familiar, preinstalled.
+* Limitations: Multi-step calcualtions, edit typos in previous inputs. Not easy to share thought process.
 
-I still reach for this when I need a single one-off result.
+Like everyone else, I reach for this when I need a fast one-off answer.
 
-## Intermediate: Text-based calc scratchpads
+## Medium: Calc Scratchpads
 
 <img src="https://github.com/kazad/instacalc/assets/115572/79c37494-69a9-49ab-9868-634695a7ac58" height="200">
 
 <img src="https://github.com/kazad/instacalc/assets/115572/03a4cbf4-6dcc-404e-9830-07a61819309d" height="200">
 
-Soulver, Numi, etc. have a text-first approach: you have a text file, with calculations sprinkled in. Instacalc is more like a spreadsheet: you have separate cells, with text possibly added.
+Soulver, Numi, Apple Notes and other scratchpads take a text-first approach. These tools tend to be "doc-first": you write text, with calculations sprinked in. (Words are ignored, numbers & symbols are used for calculations).
 
 * Likes: Simple to edit, copy/paste multiple lines, minimalist UI
-* Wishlist: Hard to separate editable variables from computed results. Here's a screenshot from my blog
+
+* Limitations: Hard to make a "calculator", with editable variables separate from computed results.
+
+  
+
+  For example, here's my blog, where I'm explaining Bayes' Theorem:
 
 <img src="https://github.com/kazad/instacalc/assets/115572/1fa33fda-25dc-4310-9dec-318141c96e70" height=400 />
 
-As a text scratchpad:
+I have an article (lots of text) and finally want to add a quick demo of the equation. I'd like to hide the complexity of the formula, and just show the results. Compare the screenshot above to the text version:
 
 ```
 Bayes Theorem
@@ -55,29 +61,29 @@ Chance positive test means positive result
 $$(r1 * r2)/((r1 * r2) + r3*(1-r1)) * 100      = 7.76 %
 ```
 
-I want to let people play with the variables without seeing the gnarly formula (they can click to expand it).
+While usable, I want to hide the gnarly formula while people play with the numbers.
 
-* Feature-limited: Most scratchpad tools have a limited syntax (or are built on MathJS) without the full power I wanted (see: [Wolfram Alpha compare](https://github.com/kazad/instacalc/wiki/Comparison:-Wolfram-Alpha)).
+In addition to the UX difference, I find most scratchpad tools have a limited syntax (or are built on MathJS), without the full power I wanted. See: [Wolfram Alpha compare](/compare-wolfram.md) for the types of calculations I want to handle.
 
-* Desktop apps make it difficult to share or embed (some are web-based)
+The dedicated apps also make it difficult to share/embed your numbers (some are web-based, however).
 
-Overall, I really do like the clean look of these tools. If you like that style, I made Calcr (instacalc in scratchpad form): https://calcr.com/
+Still, I enojy the clean look of these text-first tools. As a homage to that style, I made Calcr, instacalc in scratchpad form: https://calcr.com/
 
 <img src="https://github.com/kazad/instacalc/assets/115572/13f92dad-e56c-450c-9d4d-e8b781a1fc5a" height="200">
 
 ## Advanced: Excel
 
-Spreadsheets are the big-boy number crunching tool.
+Spreadsheets are our familiar, big-mamma-jamma number crunching tool.
 
 <img src="https://github.com/kazad/instacalc/assets/115572/2c78a14d-bb3a-4396-ae90-87a7223befd0" height=200 />
 
+I think the comparison is pretty clear:
 
-Like: Very powerful, well-known
-
-Drawback: Overkill and intimidating for most users. Thousands of 1-inch wide cells. Tiny fonts. Difficult syntax (no commas in numbers!). Feels formal. Difficult to share/embed quickly and anonymously.
+* Like: Powerful, well-known
+* Drawback: Overkill for most users. Thousands of cells, tiny fonts, difficult syntax, feels like work, hard to share.
 
 ## Advanced: Programming tools (Frink, JS)
 
 <img src="https://github.com/kazad/instacalc/assets/115572/f498d85a-4ea5-4d0f-8573-1ddd1d71912b" height="250">
 
-Frink and JS/Python REPLs can work for quick calculations, but they are programming languages, and too difficult for the average user.
+Programming tools/REPLs can work for quick calculations. However, they are programming languages, with the fiddly syntax, and too difficult for the average user.
