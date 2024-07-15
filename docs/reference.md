@@ -1,6 +1,6 @@
 # Giant Reference Page
 
-Here's a single-page feature list (`ctrl+f` is your friend!). Each section header opens a live demo.
+Here's an all-in-one feature list (`ctrl+f` is your friend!). Each section header opens a live demo.
 
 ## [Basic Commands (click for live demo)](https://instacalc.com/57484)
 
@@ -342,8 +342,7 @@ Adding times keeps original format
 3h 45m + 2h 15m                   = 6h
 ```
 
-
-# Values from Config Data File
+The following are extracted from the config data file.
 
 ## Number shorthand
 

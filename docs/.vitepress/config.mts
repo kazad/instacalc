@@ -8,7 +8,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'instacalc.com', link: 'https://instacalc.com' },
-      { text: 'Quickstart', link: '/quickstart' },
+      { text: 'Quickstart', link: '/quickstart' }, 
       { text: 'Reference', link: '/reference' },
       { text: 'Examples', link: '/examples' }
     ],
@@ -27,6 +27,9 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/kazad/instacalc' }
-    ]
+    ],
+    search: {
+      provider: 'local'
+    }
   }
 })

@@ -7,6 +7,12 @@ hero:
   name: "Instacalc Help"
   _text: "Guides / Tutorials / Examples"
   tagline: Guides / tutorials / examples for your favorite calculator
+  image: 
+    _src: "https://instacalc.com/img/pwa/pwa_desktop.png"
+    src: "https://instacalc.com/img/icons/ios/256.png"
+    alt: instacalc
+
+
   actions:
     - theme: brand
       text: Quickstart
