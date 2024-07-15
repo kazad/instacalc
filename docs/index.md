@@ -6,7 +6,7 @@ outline: deep
 hero:
   name: "Instacalc Help"
   _text: "Guides / Tutorials / Examples"
-  tagline: Guides / Tutorials / Examples
+  tagline: Guides / tutorials / examples for your favorite calculator
   actions:
     - theme: brand
       text: Quickstart

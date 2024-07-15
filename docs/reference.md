@@ -1,4 +1,6 @@
-Here's a single-page overview for instacalc's features (`ctrl+f` is your friend!). Each section header links to a live demo.
+# Giant Reference Page
+
+Here's a single-page feature list (`ctrl+f` is your friend!). Each section header opens a live demo.
 
 ## [Basic Commands (click for live demo)](https://instacalc.com/57484)
 

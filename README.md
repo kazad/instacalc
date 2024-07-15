@@ -12,4 +12,6 @@ A fast, easy, shareable online calculator.
 Github hosts:
 
 * [Discussions](https://github.com/kazad/instacalc/discussions): feedback/suggestions
-* [Wiki](https://github.com/kazad/instacalc/wiki): the manual
+* [Wiki](https://github.com/kazad/instacalc/wiki): internal notes
+* [help.instacalc.com](https://help.instacalc.com): the manual
+

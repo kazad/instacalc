@@ -7,6 +7,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
+      { text: 'instacalc.com', link: 'https://instacalc.com' },
       { text: 'Quickstart', link: '/quickstart' },
       { text: 'Reference', link: '/reference' },
       { text: 'Examples', link: '/examples' }
