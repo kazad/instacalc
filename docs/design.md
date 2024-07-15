@@ -1,22 +1,25 @@
 # Design Philosophy
 
-Goal: Make an effortless, mostly-right back-of-the-envelope tool.
+My goal was to make an effortless, forgiving calculation helper. Like a magical "back of the envelope" that figured out what you meant as you write it.
 
-* **Be helpful**. Assume `1/2 cm` means `0.5 cm`, not `1 / (2cm)` (inverse cm).
+A few principles:
 
-* **Get a result, explain assumptions**. `15 miles/hr in /min` likely means `15 miles/hr -> miles/min`. Do the conversion, and explain it.
+* **Helpful**. Assume that `1/2 cm` means `0.5 cm`, not `1 / (2cm)`. Don't force gnarly syntax gotchas onto the user.
+* **Do something reasonable, explain assumptions**. `15 miles/hr in /min` probably means  `15 miles/hr -> miles/min`. Right? What else would it mean? So, instead of an error, do a reasonable conversion and explain what happened.
+  * **The user (syntax) is always right**. Let people write how they think, no matter what background they have. `15 x 3` and `15 times 3` and `15 * 3` should all work: the intent is clear. And it's not just beginners: `123 as hex` and `hex(123)` and `123 -> hex` should all work.
 
-* **The user (syntax) is always right**. Let people write how they think, and make a reasonable assumption. `123 as hex` and `hex(123)` and `123 -> hex` should all work.
 
 ## Non-goals
 
-* **High precision scientific computing.** I try to avoid precision issues (`.1 + .2 == .3`) but we're not calculating the 1000th digit of pi. Try wolfram alpha.
+When making a calculation tool, you can go down many feature rabbit holes. Here's what I'm not trying to build:
 
-* **Encyclopedia of arcane units.** Let's get the basic imperial, SI units, currencies, dates, etc. Frink or GNU Units is more complete.
+* **High precision scientific computing.** Instacalc handles reasonable floating-point issues  (such as `.1 + .2 == .3`), but we aren't calculating Pi to 1000 digits. Wolfram Alpha is better.
 
-* **Bulletproof parsing.** The parser has layers of processing (names with spaces, overriding keywords), and can be tricked. That's ok.
+* **Encyclopedia of arcane units.** I've added most imperial, SI units, currencies, etc., but Frink or GNU Units is more complete.
 
-* **Lots of data**. At some point, you want Excel. Around 50-100 rows and it's still pretty usable. (Some users have several hundred.)
+* **Perfect parsing**. The parser has layers of heuristics, cleaning up input before the final parse. It can be tricked. That's ok.
+
+* **Lots of rows**. At some point, the calc UX breaks down and you want Excel. After a few hundred rows you probably want a different tool.
 
 ## Idea: On being "Mostly right"
 
