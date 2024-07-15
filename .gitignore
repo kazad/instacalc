@@ -1,0 +1,55 @@
+# VitePress specific
+node_modules/
+dist/
+.cache/
+temp/
+*.log
+
+# macOS
+.DS_Store
+
+# Editor directories and files
+.idea/
+.vscode/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS generated files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+Thumbs.db
+
+# Compiled binary files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Package files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Miscellaneous
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
