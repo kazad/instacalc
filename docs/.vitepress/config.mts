@@ -20,7 +20,8 @@ export default defineConfig({
           { text: 'Reference', link: '/reference' },
           { text: 'Examples', link: '/examples' },
           { text: 'Design', link: '/design' },
-          { text: 'Comparison', link: '/compare' }
+          { text: 'Comparison', link: '/compare' },
+          { text: 'vs. Wolfram Alpha', link: '/compare-wolfram' }
         ]
       }
     ],

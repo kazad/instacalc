@@ -23,13 +23,16 @@ hero:
     - theme: alt
       text: Showcase 
       link: /examples
+    - theme: alt
+      text: Why Instacalc?
+      link: /why
 
 features:
-  - title: Fast
-    details: Get answers as you type. 
-  - title: Easy
-    details: Simple syntax (JS or Excel) 
-  - title: Shareable
-    details: Share calcs with a single click, no login needed.
+  - title: Instant Results
+    details: See live answers as you type
+  - title: Effortless Syntax
+    details: Use familiar JS or Excel-style input
+  - title: One-click sharing
+    details: Share calcs with a single click, no login needed
 ---
 
