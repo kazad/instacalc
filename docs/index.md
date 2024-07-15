@@ -1,25 +1,29 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
+outline: deep
 
 hero:
-  name: "Instacalc Help Center"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Instacalc Help"
+  _text: "Guides / Tutorials / Examples"
+  tagline: Guides / Tutorials / Examples
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Quickstart
+      link: /quickstart
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Command reference
+      link: /reference
+    - theme: alt
+      text: Showcase 
+      link: /examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Fast
+    details: Get answers as you type. 
+  - title: Easy
+    details: Simple syntax (JS or Excel) 
+  - title: Shareable
+    details: Share calcs with a single click, no login needed.
 ---
 
