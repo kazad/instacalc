@@ -11,6 +11,7 @@ export default defineConfig({
       { text: 'instacalc.com', link: 'https://instacalc.com' },
       { text: 'Quickstart', link: '/quickstart' }, 
       { text: 'Reference', link: '/reference' },
+      { text: 'Examples', link: '/examples' },
     ],
 
     logo: 'https://instacalc.com/img/icons/ios/256.png',
@@ -31,6 +32,9 @@ export default defineConfig({
           { text: 'Guide: Sharing', link: '/guide-sharing' },
           
         ]
+      },
+      {
+        items: [{text: "Examples", link: "/examples"}],
       },
       {
         text: 'Tips', 
