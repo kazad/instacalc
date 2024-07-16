@@ -24,6 +24,9 @@ export default defineConfig({
           { text: 'Guide: Financial', link: '/guide-finance' },
           { text: 'Guide: Programming', link: '/guide-programming' },
           { text: 'Guide: Excel', link: '/guide-excel' },
+          { text: 'Guide: Construction', link: '/guide-construction' },
+          { text: 'Guide: Science/Engineering', link: '/guide-science' },
+          { text: 'Guide: Formatting', link: '/guide-science' },
           
         ]
       },

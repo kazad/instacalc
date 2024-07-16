@@ -6,15 +6,13 @@ Here's a demo calc with some programming commands.
 
 A few notes:
 
-* Most JavaScript programming syntax is supported (`if/else`, `? :`, strings, etc.). Loops and functions are not.
+* Most JS operators and syntax are supported (`if/else`, `? :`, string literals, etc.). Loops and functions are not.
 * File data sizes (`GB`, `MB`) are base 2. You can explicitly use `MB_SI` if you want base 10.
 * Functions can be called in several ways:
   * `123 as bin`
   * `123 -> bin`
   * `bin(123)`
-* Binary operators (`AND`, `XOR`, `NOT`) are best invoked using that keyword. `&`, `|` and `^` will work if the inputs look like binary or hex numbers (`0x123 ^ 0x456`). The issue here is the carat symbol `^`, most often used as an exponent.
-
-
+* Binary operators (`AND`, `XOR`, `NOT`) are typically invoked using that keyword. The `&`, `|` and `^` operators work when used with binary or hex values (`0x123 ^ 0x456` is `XOR` not an exponent). The root issue is disambiguating the carat symbol `^`, usually used as an exponent.
 
 ## Examples
 
