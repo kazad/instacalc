@@ -1,6 +1,6 @@
 # Instacalc vs Wolfram Alpha
 
-Wolram Alpha is the gold standard for unit processing and calculations, and an inspiration. Sometimes it doesn't do what I mean. Here's examples that Instacalc can handle that I was surprised Wolfram didn't.
+Wolram Alpha is the gold standard for unit processing and calculations, and an inspiration. Even still, it sometimes doesn't do what I mean. Here's a few examples that Instacalc handles but Wolfram Alpha doesn't.
 
 https://instacalc.com/57433
 
