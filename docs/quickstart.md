@@ -1,6 +1,6 @@
 # Quickstart
 
-[InstaCalc](https://instacalc.com) is a smart, powerful calculator that's actually fun to use. Here's a live demo:
+[Instacalc](https://instacalc.com) is a smart, powerful calculator that's actually fun to use. Here's a live demo:
 
 <iframe src="https://instacalc.com/57627/embed" width="450" height="600" frameborder="0"></iframe>
 
@@ -31,7 +31,7 @@ Save a permalink to any calculation with 1 click (no login). Post the link on a 
 
 ## Put a calculator on your website
 
-Even better than linking, show off your thoughts! Click the Embed button to get a shortcode to put InstaCalc on your site, like this:
+Even better than linking, show off your thoughts! Click the Embed button to get a shortcode to put Instacalc on your site, like this:
 
 ```
 <iframe src="https://instacalc.com/42214/embed" width="450" height="350" frameborder="0"></iframe>
@@ -43,7 +43,7 @@ Calculations are as shareable as a YouTube video. Again, readers can edit the re
 
 ## Dozens of power features
 
-InstaCalc is filled with powerful features you wouldn't expect from a calculator:
+Instacalc is filled with powerful features you wouldn't expect from a calculator:
 
 * Unit, date/time, timezone, currency conversions
 * Programming, if/else, hex/binary/decimal
@@ -58,8 +58,8 @@ Software geeks (myself included) appreciate an easy way to convert numbers to an
 
 ## Hide rows you don't want.
 
-Spreadsheets are nice because they hide details. InstaCalc can do the same: Just click a result to hide details for that row. Show the final results for a calculation, for a clean look.
+Spreadsheets are nice because they hide details. Instacalc can do the same: Just click a result to hide details for that row. Show the final results for a calculation, for a clean look.
 
 ## Take it for a test drive.
 
-InstaCalc was meant to be fast and fun. You won't be throwing out your spreadsheet, just saving it for the most boring work. For everyday needs, instacalc is way more fun. Enjoy.
+Instacalc was meant to be fast and fun. You won't be throwing out your spreadsheet, just saving it for the most boring work. For everyday needs, instacalc is way more fun. Enjoy.
