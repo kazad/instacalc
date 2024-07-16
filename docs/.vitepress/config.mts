@@ -22,6 +22,7 @@ export default defineConfig({
       {
         /*text: 'Sections', */
         items: [
+          { text: 'Quickstart', link: '/quickstart' },
           { text: 'Reference', link: '/reference' },
           { text: 'Helpful Features', link: '/features-basic' },
           { text: 'Advanced Features', link: '/features-advanced' },
