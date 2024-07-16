@@ -73,5 +73,12 @@ export default defineConfig({
     search: {
       provider: 'local'
     }
-  }
+  },
+
+  head: [
+    [
+      'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=GTM-WKJC6CS' }
+    ]
+  ],
 })
