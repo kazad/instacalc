@@ -33,6 +33,10 @@ Save a permalink to any calculation with 1 click (no login). Post the link on a 
 
 Even better than linking, show off your thoughts! Click the Embed button to get a shortcode to put InstaCalc on your site, like this:
 
+```
+<iframe src="https://instacalc.com/42214/embed" width="450" height="350" frameborder="0"></iframe>
+```
+
 <iframe src="https://instacalc.com/42214/embed" width="450" height="450" frameborder="0"></iframe>
 
 Calculations are as shareable as a YouTube video. Again, readers can edit the results, no login required.
