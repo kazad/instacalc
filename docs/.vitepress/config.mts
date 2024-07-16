@@ -23,15 +23,33 @@ export default defineConfig({
 
     sidebar: [
       {
-        /*text: 'Sections', */
+        text: 'Guides', 
         items: [
+          { text: 'Full Reference', link: '/reference' },
           { text: 'Quickstart', link: '/quickstart' },
-          { text: 'Reference', link: '/reference' },
+          { text: 'Guide: Financial', link: '/guide-finance' },
+          { text: 'Guide: Programming', link: '/guide-programming' },
+          { text: 'Guide: Excel', link: '/guide-excel' },
+          
+        ]
+      },
+      {
+        text: 'Tips', 
+        items: [
           { text: 'Helpful Features', link: '/features-basic' },
           { text: 'Advanced Features', link: '/features-advanced' },
-          /*
-          { text: 'Examples', link: '/examples' },
-           */
+        ]
+      },
+      {
+        text: 'Apps', 
+        items: [
+          { text: 'iPhone/iPad/Mac', link: '/app-ios' },
+          { text: 'Desktop / Android', link: '/app-pwa' },
+        ]
+      },
+      {
+        text: 'Musings',
+        items:[
           { text: 'Design Philosophy', link: '/design' },
           { text: 'Product Comparison', link: '/compare' },
           { text: 'vs. Wolfram Alpha', link: '/compare-wolfram' },

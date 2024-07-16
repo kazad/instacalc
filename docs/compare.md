@@ -1,4 +1,4 @@
-# Instacalc compared to other tools
+# Instacalc vs Other Tools
 
 Instacalc is my sweet spot for a calculation tool:
 

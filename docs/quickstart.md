@@ -1,65 +1,25 @@
 # Quickstart
 
-[Instacalc](https://instacalc.com) is a smart, powerful calculator that's actually fun to use. Here's a live demo:
+[Instacalc](https://instacalc.com) makes number crunching effortless.
 
-<iframe src="https://instacalc.com/57627/embed" width="450" height="600" frameborder="0"></iframe>
+* Solve "back of the envelope" calculations with natural language
+* Use currency, unit and date/time conversions
+* Share/embed live calculator links (no login!)
+* Stress test formulas and easily see the data flow
+* Whip together quick budgets, sales estimates, video game calculators
 
-Here's a tour of the major features.
+## Demo
 
-## Instant results
+<iframe src="https://instacalc.com/57627/embed" width="100%" height="600" frameborder="0"></iframe>
 
-Results appear as you type -- no waiting. Most spreadsheets force you to confirm a result before seeing the answer. `=300 * 400` then *Enter*.
+## Basic features
 
-## Multiple rows
+| Feature                  | Details                                                      |
+| ------------------------ | ------------------------------------------------------------ |
+| Instant results          | Results appear as you type, no waiting. Hide formulas by clicking on them. |
+| Arithmetic               | Use basic operations (`+ - * /`) or natural language ones (`x` to multiply: `3 x 5` or `3 times 5` ) |
+| Natural language numbers | Write numbers as you'd say them:  `6.6 billion | 5M | 250k`  |
+| Shareable links          | Make a permalink (like https://instacalc.com/42214) in one click |
+| Embeds                   | Get an embed code for your website: <br />```<iframe src="https://instacalc.com/42214/embed" width="450" height="350" frameborder="0"></iframe>```<br /><iframe src="https://instacalc.com/42214/embed" width="450" height="350" frameborder="0"></iframe> |
 
-See your formula and result side-by-side. If something's wrong, edit it immediately. The goal is like working on paper.
-
-## Readable numbers and equations
-
-Write numbers just as you would by hand:
-
-* Use `6.6 billion` (or `6.6b`), not `6600000000`
-* Write `distance = 50 mph x 3 hours`, not `=E3 * C2`
-
-You can reference any result by row number (`r1`) or by name (`distance`).
-
-Friendly numbers and named cells are possible in spreadsheets, but not easy.
-
-## Share any result
-
-Save a permalink to any calculation with 1 click (no login). Post the link on a forum, blog, or social media for readers to play with their own numbers.
-
-## Put a calculator on your website
-
-Even better than linking, show off your thoughts! Click the Embed button to get a shortcode to put Instacalc on your site, like this:
-
-```
-<iframe src="https://instacalc.com/42214/embed" width="450" height="350" frameborder="0"></iframe>
-```
-
-<iframe src="https://instacalc.com/42214/embed" width="450" height="450" frameborder="0"></iframe>
-
-Calculations are as shareable as a YouTube video. Again, readers can edit the results, no login required.
-
-## Dozens of power features
-
-Instacalc is filled with powerful features you wouldn't expect from a calculator:
-
-* Unit, date/time, timezone, currency conversions
-* Programming, if/else, hex/binary/decimal
-* Scientific/engineering functions
-* Many output display formats
-
-The best part? If you never use 'em, the features aren't in your face. See the [reference](/reference.html) for a full list.
-
-## Make programming easier
-
-Software geeks (myself included) appreciate an easy way to convert numbers to and from hex and binary. Use shortcuts like 1GB (yes, an actual GB). Use binary operations like AND, OR, NOT and XOR. Use simple if-then statements. And keep track of all your results at once.
-
-## Hide rows you don't want.
-
-Spreadsheets are nice because they hide details. Instacalc can do the same: Just click a result to hide details for that row. Show the final results for a calculation, for a clean look.
-
-## Take it for a test drive.
-
-Instacalc was meant to be fast and fun. You won't be throwing out your spreadsheet, just saving it for the most boring work. For everyday needs, instacalc is way more fun. Enjoy.
+You should feel like you're using a magic, mind-reading scratchpad. See the [reference](/reference) for examples of arithmetic, programming, unit conversions, etc. This guide will walk through some common scenarios.

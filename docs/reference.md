@@ -2,7 +2,7 @@
 
 Here's an all-in-one feature list (`ctrl+f` is your friend!). Each section header opens a live demo.
 
-## [Basic Commands (click for live demo)](https://instacalc.com/57484)
+## [Basic Commands (click for demo)](https://instacalc.com/57484)
 
 ```
 Arithmetic (Add, Subtract, Multiply, Divide)
