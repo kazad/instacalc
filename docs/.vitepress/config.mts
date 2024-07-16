@@ -9,14 +9,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'instacalc.com', link: 'https://instacalc.com' },
-     /* 
       { text: 'Quickstart', link: '/quickstart' }, 
-       */
       { text: 'Reference', link: '/reference' },
-
-      /*
-      { text: 'Examples', link: '/examples' }
-       */
     ],
 
     logo: 'https://instacalc.com/img/icons/ios/256.png',
@@ -25,8 +19,8 @@ export default defineConfig({
       {
         text: 'Guides', 
         items: [
-          { text: 'Full Reference', link: '/reference' },
           { text: 'Quickstart', link: '/quickstart' },
+          { text: 'Full Reference', link: '/reference' },
           { text: 'Guide: Financial', link: '/guide-finance' },
           { text: 'Guide: Programming', link: '/guide-programming' },
           { text: 'Guide: Excel', link: '/guide-excel' },
