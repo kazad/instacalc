@@ -1,3 +1,5 @@
+# PWA App
+
 A PWA (Progressive Web App) is a fast, offline-capable app built with web technologies. It offers a native-like experience and can be installed directly from a browser to your device, without needing an app store.
 
 ## Desktop install (Windows/Linux/MacOS)
