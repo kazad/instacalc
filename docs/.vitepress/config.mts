@@ -25,6 +25,7 @@ export default defineConfig({
           { text: 'Guide: Programming', link: '/guide-programming' },
           { text: 'Guide: Excel', link: '/guide-excel' },
           { text: 'Guide: Construction', link: '/guide-construction' },
+          { text: 'Guide: Unit Conversions', link: '/guide-conversion' },
           { text: 'Guide: Science/Engineering', link: '/guide-science' },
           { text: 'Guide: Formatting', link: '/guide-format' },
           { text: 'Guide: Sharing', link: '/guide-sharing' },
