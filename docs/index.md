@@ -20,6 +20,9 @@ hero:
     - theme: alt
       text: Command reference
       link: /reference
+    - theme: alt
+      text: Example Gallery
+      link: /examples
 
 features:
   - title: Instant Results
