@@ -23,6 +23,8 @@ export default defineConfig({
         /*text: 'Sections', */
         items: [
           { text: 'Reference', link: '/reference' },
+          { text: 'Helpful Features', link: '/features-basic' },
+          { text: 'Advanced Features', link: '/features-advanced' },
           { text: 'Examples', link: '/examples' },
           { text: 'Design', link: '/design' },
           { text: 'Comparison', link: '/compare' },

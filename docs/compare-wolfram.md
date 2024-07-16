@@ -1,4 +1,8 @@
-Wolram Alpha is the gold standard for most unit processing. Sometimes, though, it doesn't do what I mean. These examples are currently handled by InstaCalc: https://instacalc.com/57433
+# Instacalc vs Wolfram Alpha
+
+Wolram Alpha is the gold standard for unit processing and calculations, and an inspiration. Sometimes it doesn't do what I mean. Here's examples that Instacalc can handle that I was surprised Wolfram didn't.
+
+https://instacalc.com/57433
 
 ```
 30 miles per gallon in cents per mile at $3/gallon        = 10 cents/mile
