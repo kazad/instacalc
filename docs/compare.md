@@ -22,7 +22,7 @@ Here's a few thoughts on finding the best number crunching tool for the job..
 
 ## Easy: Calculators
 
-<img src="https://github.com/kazad/instacalc/assets/115572/f9582570-6020-48cb-988d-2553274f2ae6" height="200">
+<img src="https://github.com/kazad/instacalc/assets/115572/f9582570-6020-48cb-988d-2553274f2ae6" style="height: 250px">
 
 Here's our trusty pocket calculator.
 
