@@ -26,7 +26,8 @@ export default defineConfig({
           { text: 'Guide: Excel', link: '/guide-excel' },
           { text: 'Guide: Construction', link: '/guide-construction' },
           { text: 'Guide: Science/Engineering', link: '/guide-science' },
-          { text: 'Guide: Formatting', link: '/guide-science' },
+          { text: 'Guide: Formatting', link: '/guide-format' },
+          { text: 'Guide: Sharing', link: '/guide-sharing' },
           
         ]
       },
@@ -50,6 +51,12 @@ export default defineConfig({
           { text: 'Design Philosophy', link: '/design' },
           { text: 'Product Comparison', link: '/compare' },
           { text: 'vs. Wolfram Alpha', link: '/compare-wolfram' },
+        ]
+      },
+      {
+        text: 'Other',
+        items:[
+          { text: 'Privacy Policy', link: '/privacy' },
           { text: 'Feedback on Github', link: 'https://github.com/kazad/instacalc/discussions' }
         ]
       }

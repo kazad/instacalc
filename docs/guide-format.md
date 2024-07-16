@@ -1,6 +1,12 @@
 # Guide: Formatting
 
-Instacalc will try to display numbers in a natural way.
+The help text below a result tries to auto-format a result (for example, converting large numbers to 'scaled' versions).
+
+![](https://github.com/user-attachments/assets/cf47c1b7-8449-4390-b993-9f0368175e3a)
+
+![https://github.com/user-attachments/assets/3902346d-8298-4814-876c-4aecc5413af0](https://github.com/user-attachments/assets/3902346d-8298-4814-876c-4aecc5413af0)
+
+Note that `as scaled`, `as decimal`, `as binary` are hinted as the way to get that output.
 
 ## Calc format settings
 
