@@ -13,7 +13,10 @@ export default defineConfig({
       { text: 'Quickstart', link: '/quickstart' }, 
        */
       { text: 'Reference', link: '/reference' },
+
+      /*
       { text: 'Examples', link: '/examples' }
+       */
     ],
 
     logo: 'https://instacalc.com/img/icons/ios/256.png',
@@ -26,9 +29,11 @@ export default defineConfig({
           { text: 'Reference', link: '/reference' },
           { text: 'Helpful Features', link: '/features-basic' },
           { text: 'Advanced Features', link: '/features-advanced' },
+          /*
           { text: 'Examples', link: '/examples' },
-          { text: 'Design', link: '/design' },
-          { text: 'Comparison', link: '/compare' },
+           */
+          { text: 'Design Philosophy', link: '/design' },
+          { text: 'Product Comparison', link: '/compare' },
           { text: 'vs. Wolfram Alpha', link: '/compare-wolfram' },
           { text: 'Feedback on Github', link: 'https://github.com/kazad/instacalc/discussions' }
         ]

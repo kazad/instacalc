@@ -20,12 +20,6 @@ hero:
     - theme: alt
       text: Command reference
       link: /reference
-    - theme: alt
-      text: Showcase 
-      link: /examples
-    - theme: alt
-      text: Why Instacalc?
-      link: /why
 
 features:
   - title: Instant Results
