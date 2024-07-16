@@ -20,7 +20,7 @@ onMounted(() => {
 const formattedCalcs = computed(() => {
   return calcs.value.map(calc => ({
     ...calc,
-    displayName: calc.name.replace(/^InstaCalc:\s*/, '')
+    displayName: calc.name.replace(/^instacalc:\s*/i, '')
   }));
 });
 

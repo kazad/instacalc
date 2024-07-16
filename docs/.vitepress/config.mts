@@ -18,10 +18,15 @@ export default defineConfig({
 
     sidebar: [
       {
+        items: [
+          { text: 'Full Reference', link: '/reference' },
+          { text: "Example Gallery", link: "/examples"},
+        ],
+      },
+      {
         text: 'Guides', 
         items: [
           { text: 'Quickstart', link: '/quickstart' },
-          { text: 'Full Reference', link: '/reference' },
           { text: 'Guide: Financial', link: '/guide-finance' },
           { text: 'Guide: Programming', link: '/guide-programming' },
           { text: 'Guide: Excel', link: '/guide-excel' },
@@ -30,23 +35,20 @@ export default defineConfig({
           { text: 'Guide: Science/Engineering', link: '/guide-science' },
           { text: 'Guide: Formatting', link: '/guide-format' },
           { text: 'Guide: Sharing', link: '/guide-sharing' },
-          
         ]
       },
-      {
-        items: [{text: "Examples", link: "/examples"}],
-      },
+      
       {
         text: 'Tips', 
         items: [
-          { text: 'Helpful Features', link: '/features-basic' },
+          { text: 'Basic UI Features', link: '/features-basic' },
           { text: 'Advanced Features', link: '/features-advanced' },
         ]
       },
       {
         text: 'Apps', 
         items: [
-          { text: 'iPhone/iPad/Mac', link: '/app-ios' },
+          { text: 'iPhone / iPad', link: '/app-ios' },
           { text: 'Desktop / Android', link: '/app-pwa' },
         ]
       },
