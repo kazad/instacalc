@@ -447,6 +447,9 @@ Demo: https://instacalc.com/57432
 
 ```
 
+* `15 kg * gravity => 147 newton` 
+* Underscores can be swapped with spaces: `speed_of_light` or `speed of light`
+
 ## Function Help Reference
 
 ```
@@ -561,6 +564,8 @@ Demo: https://instacalc.com/57432
     pduration: "PDURATION(rate, pv, fv) | number of periods for an annuity (Excel)",
 ```
 
+Function help appears below your input as you type ([details](https://github.com/kazad/instacalc/discussions/44)).
+
 ## Plain English Operations
 
 ```
@@ -652,6 +657,13 @@ Demo: https://instacalc.com/57432
     "until": "/",
 ```
 
+* `15 times 3`
+* `half of 27`
+* `13 is what percent of 25`
+* `15 lbs convert to kg`
+* `15 mph for 3 hours`
+* `15 feet per day in feet per year`
+
 ## Alternate symbols
 
 ```
@@ -682,6 +694,8 @@ Demo: https://instacalc.com/57432
     "\u03C6": "(PHI)",
     "\u03C4": "(TAU)",
 ```
+
+* Usually not typed, these may come in via copy-paste of text
 
 ## Currency shorthand
 
@@ -717,6 +731,9 @@ Demo: https://instacalc.com/57432
     naira: "(NGN, Nigerian Naira)",
     bolivar: "(VES, Venezuelan Bolivar)",
 ```
+
+* `15 dollars in loonie`
+* `200 yen in USD`
 
 ## Symbol insertion: "\symbol", like `\Alpha`
 
@@ -917,3 +934,5 @@ Demo: https://instacalc.com/57432
     y: "𝒚",
     z: "𝒛"
 ```
+
+* Insert a symbol by writing `\symbol` and then pressing space, such as `\pi` or `\alpha`

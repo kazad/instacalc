@@ -1,4 +1,4 @@
-# Guide: Financial Functions
+# Financial Calculations
 
 Financial calculations (loans, savings) is a oft-needed calculation, and tricky to do by hand.
 

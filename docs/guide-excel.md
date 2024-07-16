@@ -1,10 +1,9 @@
-# Guide: Excel Compatability
+# Excel Compatability
 
-Instacalc tries to implement the most common Excel functions. Other notes:
+Instacalc supports the most common Excel functions (`SUM`, `PMT`, etc.). Other tips: 
 
-* Leading equals are supported but not required: `=R1 * 3` is the same as `R1 * 3`
-
-
+* Formulas like `=R1 * 3` work. (The leading `=` isn't needed, but muscle memory!) 
+* Use row ranges like `SUM(R1:R3)` as you'd expect
 
 ## Financial Functions
 

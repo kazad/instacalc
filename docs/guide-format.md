@@ -1,4 +1,4 @@
-# Guide: Formatting
+# Formatting Options
 
 The help text below a result tries to auto-format a result (for example, converting large numbers to 'scaled' versions).
 

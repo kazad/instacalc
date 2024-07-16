@@ -1,4 +1,4 @@
-# Guide: Sharing
+# Sharing
 
 Calcs can be shared with a permalink (`instacalc.com/12345`) or added to a website with an embed code.
 

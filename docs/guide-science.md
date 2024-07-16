@@ -1,4 +1,4 @@
-# Guide: Science / Engineering
+# Science / Engineering Calculations
 
 Instacalc loves science. It supports most imperial and SI units.
 
@@ -14,7 +14,9 @@ Instacalc loves science. It supports most imperial and SI units.
 <iframe src="https://instacalc.com/56724/embed" width="100%" height="650" frameborder="0"></iframe>
 
 Instacalc works with most SI units, and you can do comparison as seen above.
-* Units can be used on their own (`cm` is treated as `1 cm`, so you can do `15 * cm`)
-* Convert to SI base units with `to SI`
-* Use dots or multiplication to make compound units: `15 kg*m/s^2`
-* You can use `per` and other keywords for division and conversions: `15 miles/hour in meters per year`
+* Units can be treated as variables: `cm` is `1 cm`, and you can do `15 * cm`
+* Merge base units to compound with `to SI`: `15 kg m/s^2 to SI => 15 newton`
+* Split compound into base units `to SIBase`: `15 N to SIBase => 15 kg m/s^2`
+* Make compound units with space or multiplication: `15 kg m/s^2` or `15 kg * m/s^2`
+* See the [predefined constants](/reference.html#predefined-variables) for physics constants (`speed of light`, `gravity`, etc.)
+
