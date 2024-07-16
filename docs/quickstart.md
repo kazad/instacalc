@@ -1,6 +1,6 @@
 # Quickstart
 
-[InstaCalc](https://instacalc.com) is a smart, powerful calculator that's actually fun to use.
+[InstaCalc](https://instacalc.com) is a smart, powerful calculator that's actually fun to use. Here's a live demo:
 
 <iframe src="https://instacalc.com/57627/embed" width="450" height="600" frameborder="0"></iframe>
 

@@ -29,7 +29,8 @@ export default defineConfig({
           { text: 'Examples', link: '/examples' },
           { text: 'Design', link: '/design' },
           { text: 'Comparison', link: '/compare' },
-          { text: 'vs. Wolfram Alpha', link: '/compare-wolfram' }
+          { text: 'vs. Wolfram Alpha', link: '/compare-wolfram' },
+          { text: 'Feedback on Github', link: 'https://github.com/kazad/instacalc/discussions' }
         ]
       }
     ],
