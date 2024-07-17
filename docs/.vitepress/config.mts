@@ -88,7 +88,7 @@ export default defineConfig({
     ],
     [
       'script',
-      { src: 'https://instacalc.com/demo/instacalc.render.js' }
+      { srclocal: 'http://localhost:5002/demo/instacalc.render.js', src: 'https://instacalc.com/demo/instacalc.render.js' }
     ],
     [
       'link',
