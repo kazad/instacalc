@@ -13,10 +13,6 @@ Instacalc tries to be as friendly as possible. Here's some helpful features to t
 * [Drag and drop rows](https://github.com/kazad/instacalc/discussions/34)
 * [Paste multiple lines](https://github.com/kazad/instacalc/discussions/32)
 * [Display mode](https://github.com/kazad/instacalc/discussions/38)
-* [Inline help messages](https://github.com/kazad/instacalc/discussions/41) and [more](https://github.com/kazad/instacalc/discussions/44)
+* [Inline help messages](https://github.com/kazad/instacalc/discussions/41)
 * [Calc folders](https://github.com/kazad/instacalc/discussions/64)
  
-
-
-
-
