@@ -92,7 +92,7 @@ export default defineConfig({
     ],
     [
       'link',
-      { href: 'https://instacalc.com/demo/instacalc.render.css', rel: 'stylesheet' }
+      { hreflocal: 'http://localhost:5002/demo/instacalc.render.css', href: 'https://instacalc.com/demo/instacalc.render.css', rel: 'stylesheet' }
     ]
   ],
 
