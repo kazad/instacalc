@@ -4,7 +4,7 @@ import './custom.css'
 
 // export default DefaultTheme
 
-import { onMounted, watch, nextTick } from 'vue'
+import { onUpdated, watch, nextTick } from 'vue'
 import { useRoute } from 'vitepress'
 
 export default {
@@ -21,7 +21,7 @@ export default {
             }
         }
 
-        onMounted(() => {
+        onUpdated(() => {
             // Initial render
             nextTick(renderInstaCalc)
         })
