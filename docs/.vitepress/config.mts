@@ -84,11 +84,11 @@ export default defineConfig({
     ],
     [
       'script',
-      { async: '', src: 'https://instacalc.com/dist/main.min.js' }
+      { src: 'https://instacalc.com/dist/main.min.js' }
     ],
     [
       'script',
-      { async: '', src: 'https://instacalc.com/demo/instacalc.render.js' }
+      { src: 'https://instacalc.com/demo/instacalc.render.js' }
     ],
     [
       'link',
