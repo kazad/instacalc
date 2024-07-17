@@ -4,6 +4,8 @@
 
 ```instacalc
 15 x 13
+2 + 2
+8 * 3
 ```
 
 <instacalc>
