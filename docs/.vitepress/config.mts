@@ -81,6 +81,38 @@ export default defineConfig({
     [
       'script',
       { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=GTM-WKJC6CS' }
+    ],
+    [
+      'script',
+      { async: '', src: 'https://instacalc.com/dist/main.min.js' }
+    ],
+    [
+      'script',
+      { async: '', src: 'https://instacalc.com/demo/instacalc.render.js' }
+    ],
+    [
+      'link',
+      { href: 'https://instacalc.com/demo/instacalc.render.css', rel: 'stylesheet' }
     ]
   ],
-})
+
+  /*
+  transformHtml: (code, id, { pageData }) => {
+    return code + `test`;
+
+    if (code.includes('<instacalc>')) {
+      return code + `
+        <script src="https://instacalc.com/dist/main.min.js"></script>
+        <script src="https://instacalc.com/demo/instacalc.render.js"></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            if (typeof IC !== 'undefined' && typeof IC.render === 'function') {
+              IC.render();
+            }
+          });
+        </script>
+      `
+    }
+  }
+    */
+});
