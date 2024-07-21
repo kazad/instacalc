@@ -27,9 +27,9 @@ Here's a few thoughts on finding the best number crunching tool for the job..
 Here's our trusty pocket calculator.
 
 * Likes: Simple, familiar, preinstalled.
-* Limitations: Multi-step calcualtions, edit typos in previous inputs. Not easy to share thought process.
+* Limitations: Difficult to do multi-step calcualtions, or edit typos in previous inputs. Hard to see/share thought process. 
 
-Like everyone else, I reach for this when I need a fast one-off answer.
+Still, like everyone else, I reach for this when I need a fast one-off answer.
 
 ## Medium: Calc Scratchpads
 
@@ -37,19 +37,19 @@ Like everyone else, I reach for this when I need a fast one-off answer.
 
 <img src="https://github.com/kazad/instacalc/assets/115572/03a4cbf4-6dcc-404e-9830-07a61819309d" height="200">
 
-Soulver, Numi, Apple Notes and other scratchpads take a text-first approach. These tools tend to be "doc-first": you write text, with calculations sprinked in. (Words are ignored, numbers & symbols are used for calculations).
+Soulver, Numi, Apple Notes and other scratchpads take a text-first approach. They are "doc-first": you write text, which is ignored, with calculations sprinked in. (Words are ignored, numbers & symbols are recognized as calculations).
 
-* Likes: Simple to edit, copy/paste multiple lines, minimalist UI
+* Likes: Easy editing, can copy/paste multiple lines, minimalist UI
 
-* Limitations: Hard to make a "calculator", with editable variables separate from computed results.
+* Limitations: Hard to make a "calculator", with input variables separate from computed results.
 
   
 
-  For example, here's my blog, where I'm explaining Bayes' Theorem:
+  For example, here's my blog, explaining Bayes' Theorem:
 
 <img src="https://github.com/kazad/instacalc/assets/115572/1fa33fda-25dc-4310-9dec-318141c96e70" height=400 />
 
-I have an article (lots of text) and finally want to add a quick demo of the equation. I'd like to hide the complexity of the formula, and just show the results. Compare the screenshot above to the text version:
+The article has a lot of text. I want a quick way to demo the equation, without reading formulas. Compare the screenshot to the text version:
 
 ```
 Bayes Theorem
@@ -61,13 +61,13 @@ Chance positive test means positive result
 $$(r1 * r2)/((r1 * r2) + r3*(1-r1)) * 100      = 7.76 %
 ```
 
-While usable, I want to hide the gnarly formula while people play with the numbers.
+While technically usable, the formula is too much detail when people want to play with the numbers.
 
-In addition to the UX difference, I find most scratchpad tools have a limited syntax (or are built on MathJS), without the full power I wanted. See: [Wolfram Alpha compare](/compare-wolfram.md) for the types of calculations I want to handle.
+Also, most scratchpads have limited syntax (or are built on MathJS), without the full flexibility I wanted (see [Wolfram Alpha compare](/compare-wolfram.md) for what I wanted to handle).
 
-The dedicated apps also make it difficult to share/embed your numbers (some are web-based, however).
+The dedicated apps make it hard to share/embed your numbers (some are web-based, however).
 
-Still, I enojy the clean look of these text-first tools. As a homage to that style, I made Calcr, instacalc in scratchpad form: https://calcr.com/
+Still, I really like the clean look of these text-first tools. As a homage to that style, I made Calcr, aka instacalc in scratchpad form: https://calcr.com/
 
 <img src="https://github.com/kazad/instacalc/assets/115572/13f92dad-e56c-450c-9d4d-e8b781a1fc5a" height="200">
 
