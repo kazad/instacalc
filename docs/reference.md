@@ -454,6 +454,13 @@ Demo: https://instacalc.com/57432
 
 ```
 
+    "hex": "hex(x) | convert x to hexadecimal, hex(255) = 0xff",
+    "oct": "oct(x) | convert x to octal, oct(255) = 0377",
+    "bin": "bin(x) | convert x to binary, bin(255) = 0b11111111",
+    "dec": "dec(x) | convert x to decimal, dec(0xFF) = 255",
+
+    if: "if (condition) { result } else { result } | if (age >= 18) { \"adult\" } else { \"child\" } \n IF(condition, true result, false result) | IF(age >= 18, \"adult\", \"child\") // excel-style",
+
     sin: "sin(x) | sine of x (degrees) | sin(2pi rad) for radians",
     cos: "cos(x) | cosine of x (degrees) | cos(2pi rad) for radians",
     tan: "tan(x) | tangent of x (degrees) | tan(2pi rad) for radians",
@@ -502,14 +509,19 @@ Demo: https://instacalc.com/57432
     log_10: "log10(x) | log base 10 of x",
     sqrt: "sqrt(x) | square root of x",
     cuberoot: "cuberoot(x) | cube root of x",
-    pow: "pow(x, y) | x^y",
-    root: "root(x, y) | x^(1/y)",
+    pow: "pow(x, y) | x to power y: x^y",
+    root: "root(x) | square root of x",
+
+    time: "time(seconds) | convert seconds to HMS, time(10000) = 2h 46m 40s",
 
     mod: "mod(x, y) | x modulo (remainder) y",
     gcd: "gcd(x, y) | greatest common divisor of x and y",
     lcm: "lcm(x, y) | least common multiple of x and y",
     sign: "sign(x) | sign of x (-1, 0, or 1)",
     clamp: "clamp(x, min, max) | min <= x <= max",
+    erf: "erf(x) | error function",
+    erfinverse: "erfinverse(x) | inverse error function",
+    gamma: "gamma(x) | gamma function",
 
     square: "square(x) | x^2",
     cube: "cube(x) | x^3",
@@ -531,9 +543,70 @@ Demo: https://instacalc.com/57432
     median: "median(r1:r3) or median(x, y, ...) | median of values",
     geomean: "geomean(r1:r3) or geomean(x, y, ...) | geometric mean of values",
 
-    var: "var(r1:r3) or var(x, y, ...) | variance of values",
-    variance: "variance(r1:r3) or variance(x, y, ...) | variance of values",
-    stddev: "stddev(r1:r3) or stddev(x, y, ...) | standard deviation of values",
+    var: "var(r1:r3) or var(x, y, ...) | sample variance of values",
+    variance: "variance(r1:r3) or variance(x, y, ...) | sample variance of values",
+
+    "var.s": "var.s(r1:r3) or var.s(x, y, ...) | sample variance of values",
+    "var.p": "var.p(r1:r3) or var.p(x, y, ...) | population variance of values",
+
+    covar: "covar(r1:r3) or var(x, y, ...) | population covariance of values",
+    covariance: "covariance(r1:r3) or variance(x, y, ...) | population covariance of values",
+
+    "covar.s": "var.s(r1:r3) or var.s(x, y, ...) | sample variance of values",
+    "covar.p": "var.p(r1:r3) or var.p(x, y, ...) | population variance of values",
+    "covariance.s": "var.s(r1:r3) or var.s(x, y, ...) | sample variance of values",
+    "covariance.p": "var.p(r1:r3) or var.p(x, y, ...) | population variance of values",
+
+    stddev: "stddev(r1:r3) or stddev(x, y, ...) | sample standard deviation of values",
+    stdev: "stdev(r1:r3) or stddev(x, y, ...) | sample standard deviation of values",
+
+    "stdev.s": "stdev.s(r1:r3) or stdev.s(x, y, ...) | sample standard deviation of values",
+    "stdev.p": "stdev.p(r1:r3) or stdev.p(x, y, ...) | population standard deviation of values",
+
+    kurt: "kurtosis(r1:r3) | sample kurtosis of values (Excel)",
+    kurtosis: "kurtosis(r1:r3) | sample kurtosis of values (Excel)",
+    skewness: "skew(array) | sample skewness of values (Excel)",
+    skew: "skew(array) | sample skewness of values (Excel)",
+
+    "norm.s.inv": "norm.s.inv(p) | inverse of standard normal cumulative distribution function (Excel)",
+    "normsinv": "norm.s.inv(p) | inverse of standard normal cumulative distribution function (Excel)",
+    "norminv": "norm.inv(p) | inverse of normal cumulative distribution function (Excel)",
+    "norm.dist": "norm.dist(x, mean, standard_dev, cumulative) | normal distribution function (Excel)",
+    "normdist": "norm.dist(x, mean, standard_dev, cumulative) | normal distribution function (Excel)",
+    "norm.s.dist": "norm.s.dist(z, cumulative) | standard normal distribution function (Excel)",
+    "normsdist": "norm.s.dist(z, cumulative) | standard normal distribution function (Excel)",
+    "t.inv": "t.inv(probability, degrees_freedom) | inverse of Student's t-distribution (Excel)",
+    "tinv": "t.inv(probability, degrees_freedom) | inverse of Student's t-distribution (Excel)",
+    "t.dist": "t.dist(x, degrees_freedom, cumulative) | Student's t-distribution function (Excel)",
+    "tdist": "t.dist(x, degrees_freedom, cumulative) | Student's t-distribution function (Excel)",
+    "chisq.dist": "chisq.dist(x, degrees_freedom, cumulative) | chi-square distribution function (Excel)",
+    "chisqdist": "chisq.dist(x, degrees_freedom, cumulative) | chi-square distribution function (Excel)",
+    "f.dist": "f.dist(x, degrees_freedom1, degrees_freedom2, cumulative) | F-distribution function (Excel)",
+    "fdist": "f.dist(x, degrees_freedom1, degrees_freedom2, cumulative) | F-distribution function (Excel)",
+    "z.test": "z.test(array, x, [sigma]) | z-test for mean (Excel)",
+    "ztest": "z.test(array, x, [sigma]) | z-test for mean (Excel)",
+    "t.test": "t.test(array1, array2, [tails], [type]) | t-test for means (Excel)",
+    "ttest": "t.test(array1, array2, [tails], [type]) | t-test for means (Excel)",
+
+    "t.dist.2t": "t.dist.2t(x, degrees_freedom) | two-tailed Student's t-distribution function (Excel)",
+    "tdist2t": "t.dist.2t(x, degrees_freedom) | two-tailed Student's t-distribution function (Excel)",
+    "t.dist.rt": "t.dist.rt(x, degrees_freedom) | right-tailed Student's t-distribution function (Excel)",
+    "tdistrt": "t.dist.rt(x, degrees_freedom) | right-tailed Student's t-distribution function (Excel)",
+    "t.inv.2t": "t.inv.2t(probability, degrees_freedom) | two-tailed inverse of Student's t-distribution (Excel)",
+    "tinv2t": "t.inv.2t(probability, degrees_freedom) | two-tailed inverse of Student's t-distribution (Excel)",
+    "chisq.dist.rt": "chisq.dist.rt(x, degrees_freedom) | right-tailed chi-square distribution function (Excel)",
+    "chisqdistrt": "chisq.dist.rt(x, degrees_freedom) | right-tailed chi-square distribution function (Excel)",
+    "chisq.inv": "chisq.inv(probability, degrees_freedom) | inverse of chi-square distribution function (Excel)",
+    "chisqinv": "chisq.inv(probability, degrees_freedom) | inverse of chi-square distribution function (Excel)",
+    "chisq.inv.rt": "chisq.inv.rt(probability, degrees_freedom) | right-tailed inverse of chi-square distribution function (Excel)",
+    "chisqinvrt": "chisq.inv.rt(probability, degrees_freedom) | right-tailed inverse of chi-square distribution function (Excel)",
+    "f.dist.rt": "f.dist.rt(x, degrees_freedom1, degrees_freedom2) | right-tailed F-distribution function (Excel)",
+    "fdistrt": "f.dist.rt(x, degrees_freedom1, degrees_freedom2) | right-tailed F-distribution function (Excel)",
+    "f.inv": "f.inv(probability, degrees_freedom1, degrees_freedom2) | inverse of F-distribution function (Excel)",
+    "finv": "f.inv(probability, degrees_freedom1, degrees_freedom2) | inverse of F-distribution function (Excel)",
+    "f.inv.rt": "f.inv.rt(probability, degrees_freedom1, degrees_freedom2) | right-tailed inverse of F-distribution function (Excel)",
+    "finvrt": "f.inv.rt(probability, degrees_freedom1, degrees_freedom2) | right-tailed inverse of F-distribution function (Excel)",
+
     range: "range(r1:r3) or range(x, y, ...) | range of values",
     count: "count(r1:r3) or count(x, y, ...) | count of values",
     percentile: "percentile(r1:r3, p) or percentile(x, y, ..., p) | pth percentile of values",
@@ -562,6 +635,20 @@ Demo: https://instacalc.com/57432
 
     rri: "RRI(nper, pv, fv) | interest rate per period of an annuity (Excel)",
     pduration: "PDURATION(rate, pv, fv) | number of periods for an annuity (Excel)",
+
+    loan: "loan(amount, rate, term) | loan payment: loan(400k, 5%, 30y)",
+    invest: "invest(amount, rate, term) | future value of investment: invest(200/month, 5%, 30y)",
+    interest: "interest(amount, rate, term) | interest cost of loan: interest(200/month, 5%, 30y)",
+
+    stock: "stock(symbol) | stock price: STOCK(AAPL)",
+    import: "import(json_url) | import data from public URL to object",
+    fib: "fib(n) | returns the nth Fibonacci number",
+    fibonacci: "fibonacci(n) | returns the nth Fibonacci number",
+    fac: "fac(n) | returns the factorial of n",
+    factorial: "factorial(n) | returns the factorial of n",
+    nchoosek: "nchoosek(n, k) | returns the binomial coefficient of n and k",
+
+    sigfig: "sigfig(x, n) | round to n significant figures, sigfig(123.456, 2) = 120",
 ```
 
 Function help appears below your input as you type ([details](https://github.com/kazad/instacalc/discussions/44)).
