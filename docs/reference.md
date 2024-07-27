@@ -556,6 +556,11 @@ Demo: https://instacalc.com/57432
     "covar.p": "var.p(r1:r3) or var.p(x, y, ...) | population variance of values",
     "covariance.s": "var.s(r1:r3) or var.s(x, y, ...) | sample variance of values",
     "covariance.p": "var.p(r1:r3) or var.p(x, y, ...) | population variance of values",
+    
+    slope: "slope(known_y's, known_x's) | slope of the linear regression line (Excel)",
+    intercept: "intercept(known_y's, known_x's) | y-intercept of the linear regression line (Excel)",
+    correl: "correl(array1, array2) | correlation coefficient between two data sets (Excel)",
+    linest: "linest(known_y's, known_x's, [const], [stats]) | linear regression line (Excel)",
 
     stddev: "stddev(r1:r3) or stddev(x, y, ...) | sample standard deviation of values",
     stdev: "stdev(r1:r3) or stddev(x, y, ...) | sample standard deviation of values",
@@ -606,6 +611,13 @@ Demo: https://instacalc.com/57432
     "finv": "f.inv(probability, degrees_freedom1, degrees_freedom2) | inverse of F-distribution function (Excel)",
     "f.inv.rt": "f.inv.rt(probability, degrees_freedom1, degrees_freedom2) | right-tailed inverse of F-distribution function (Excel)",
     "finvrt": "f.inv.rt(probability, degrees_freedom1, degrees_freedom2) | right-tailed inverse of F-distribution function (Excel)",
+
+    "binom.dist": "binom.dist(x, trials, probability_s, cumulative) | binomial distribution function",
+    "binomdist": "binom.dist(x, trials, probability_s, cumulative) | binomial distribution function",
+    "poisson.dist": "poisson.dist(x, mean, cumulative) | Poisson distribution function",
+    "poissondist": "poisson.dist(x, mean, cumulative) | Poisson distribution function",
+    "gamma.dist": "gamma.dist(x, alpha, beta, cumulative) | gamma distribution function",
+    "gammadist": "gamma.dist(x, alpha, beta, cumulative) | gamma distribution function",
 
     range: "range(r1:r3) or range(x, y, ...) | range of values",
     count: "count(r1:r3) or count(x, y, ...) | count of values",
