@@ -15,4 +15,5 @@ Instacalc tries to be as friendly as possible. Here's some helpful features to t
 * [Display mode](https://github.com/kazad/instacalc/discussions/38)
 * [Inline help messages](https://github.com/kazad/instacalc/discussions/41)
 * [Calc folders](https://github.com/kazad/instacalc/discussions/64)
- 
+* [Keyboard shortcuts](https://github.com/kazad/instacalc/discussions/106)
+
