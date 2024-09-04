@@ -11,3 +11,4 @@ Features are generally announced at: https://github.com/kazad/instacalc/discussi
 * [Comment string interpolation](https://github.com/kazad/instacalc/discussions/42)
 * [Excel-style functions](https://github.com/kazad/instacalc/discussions/87)
 * [Insert Greek letters](https://github.com/kazad/instacalc/discussions/30)
+* [Function calls and custom formats](https://github.com/kazad/instacalc/discussions/110)
