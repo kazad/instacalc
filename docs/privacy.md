@@ -6,7 +6,7 @@ InstaCalc does not collect or share data with 3rd parties for commercial purpose
 
 ## Calc Data
 
-* By default, calcs are stored in the browser's Local Storage. No login needed.
+* By default, calcs are stored in the browser's Local Storage. No login needed. Calc data is stored in plaintext, though connections to instacalc.com are SSL encrypted.
 * If you log in with Google/Apple, your calcs and preferences are synced to Google Firebase. This lets you sync calcs between a computer, phone, tablet, etc.
 * You can [export](https://github.com/kazad/instacalc/discussions/98) your calcs to a JSON data file.
 
