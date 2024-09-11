@@ -64,6 +64,7 @@ export default defineConfig({
         text: 'Other',
         items:[
           { text: 'Privacy Policy', link: '/privacy' },
+          { text: 'Terms of Service', link: '/tos' },
           { text: 'Feedback on Github', link: 'https://github.com/kazad/instacalc/discussions' }
         ]
       }
