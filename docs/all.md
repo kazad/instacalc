@@ -1,0 +1,1898 @@
+Deployment:
+- git push
+- netlify picks this up and rebuilds vitepress
+---
+outline: deep
+---
+
+# Runtime API Examples
+
+This page demonstrates usage of some of the runtime APIs provided by VitePress.
+
+The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
+
+```md
+<script setup>
+import { useData } from 'vitepress'
+
+const { theme, page, frontmatter } = useData()
+</script>
+
+## Results
+
+### Theme Data
+<pre>{{ theme }}</pre>
+
+### Page Data
+<pre>{{ page }}</pre>
+
+### Page Frontmatter
+<pre>{{ frontmatter }}</pre>
+```
+
+<script setup>
+import { useData } from 'vitepress'
+
+const { site, theme, page, frontmatter } = useData()
+</script>
+
+## Results
+
+### Theme Data
+<pre>{{ theme }}</pre>
+
+### Page Data
+<pre>{{ page }}</pre>
+
+### Page Frontmatter
+<pre>{{ frontmatter }}</pre>
+
+## More
+
+Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+# Browser Extensions
+
+Install the <a href="https://chrome.google.com/webstore/detail/instacalc/hfoojdaofolilkhakmhicmonbjmkpoai" target="_blank" rel="noopener noreferrer" class="">Chrome</a> or <a href="https://microsoftedge.microsoft.com/addons/detail/instacalc/geabodnelkpmpemdbjfniimhclafoldi" target="_blank" rel="noopener noreferrer" class="">Edge</a> extension.
+
+<img src="https://instacalc.com/img/chrome/instacalc.chrome.2.png" /># iPhone / iPad app
+
+Instacalc is on the iOS app store: https://apps.apple.com/us/app/instacalc-com/id6502033125
+
+<a href="https://apps.apple.com/us/app/instacalc-com/id6502033125"><img src="https://instacalc.com/img/ios/ic01.jpg" style="max-height: 400px"/></a>
+
+# PWA App
+
+A PWA (Progressive Web App) is a fast, offline-capable app built with web technologies. It offers a native-like experience and can be installed directly from a browser to your device, without needing an app store.
+
+## Desktop install (Windows/Linux/MacOS)
+
+Visit https://instacalc.com and look for an icon to install as a PWA (Progressive Web App).
+
+Examples: 
+
+[https://web.dev/learn/pwa/installation/](https://web.dev/learn/pwa/installation/)
+
+Chrome:
+
+* At the top right of the address bar, click Install <img width="47" alt="Screenshot 2023-08-23 at 6 36 11 PM" src="https://github.com/kazad/instacalc/assets/115572/81e4a443-9f91-4893-a83a-38751823a7dd">
+
+## Mobile install (iOS/Android)
+
+Open https://instacalc.com in your browser, and look for an "add to home screen" option:
+
+[https://web.dev/learn/pwa/installation/#ios-and-ipados-installation](https://web.dev/learn/pwa/installation/#ios-and-ipados-installation)
+
+# Instacalc vs Wolfram Alpha
+
+Wolram Alpha is the gold standard for unit processing and calculations, and an inspiration. Even still, it sometimes doesn't do what I mean. Here's a few examples that Instacalc handles but Wolfram Alpha doesn't.
+
+https://instacalc.com/57433
+
+```
+30 miles per gallon in cents per mile at $3/gallon        = 10 cents/mile
+30 miles per gallon in dollars per mile at $3/gallon      = 0.1 dollars/mile
+200 miles at 300wh/mile with $.17/kwh                     = $10.20
+
+200 miles / (sept 1 - jun 1)                              = 2.1739 miles/day
+2tb/46minute in MBps                                      = 796.7476 MBps
+
+.600kg = 23 bhd                                           = 38.3333 BHD/kg
+
+$.27 per watt in dollars per 400w                         = 108 dollars/400 w
+274 watt-hours per mile in mpge                           = 122.9927 MPGe
+
+in to cm                                                  = 2.54 cm
+foot to cm                                                = 30.48 cm
+
+15 sales/day in minutes per sale                          = 96 minutes/sale
+g=9.8 m/s^2; t=10 seconds; 1/2 g t^2                      = 490 m
+
+3 3/8" / 12                                               = 9/32"
+
+hex(1kb)                                                  = 0x0400
+1kb in hex                                                = 0x0400
+2,356,230 MIPS at 4.35 Ghz                                = 541.6621 instructions/cycle
+
+15' / 1/2"                                                = 360
+2 weeks = 5 eggs                                          = 2.5 eggs/week
+2 hours = 120 miles                                       = 60 miles/hour
+15 mbps in hours until 100 GB                             = 15 mbps
+15 mph in hours until 100 miles                           = 6.6667 hours/100 miles
+
+15 mah * 1.5v                                             = 81 joule
+(1500 mah * 1.5v) in watt hours                           = 2.25 watt hours
+
+200 miles / (mar 1 - mar 25)                              = 8.3333 miles/day
+15 L/hr in /day                                           = 360 L/day
+
+15 feet in cm + 10 inches in cm                           = 482.6 cm
+$25/hour in hours until $2000                             = 80 hours/2000 USD
+```
+
+## Cents per mile, dollars per mile, dollars per trip
+
+<img height="400" alt="wolfram-cents-per-mile" src="https://github.com/kazad/instacalc/assets/115572/81c7564a-5da5-44a8-a3bf-70f7891f9343">
+
+<img height="400" alt="wolfram-huh-conversion" src="https://github.com/kazad/instacalc/assets/115572/25d9ea83-359a-4ce2-8dba-663b15144558">
+
+<img height="200" src="https://github.com/kazad/instacalc/assets/115572/b0792b84-a553-45ca-8d2b-d604c92ea2d1">
+
+## Dates
+
+<img src="https://github.com/kazad/instacalc/assets/115572/9453cf9c-dd0f-4084-a0cc-2ef33cb9b322">
+
+## Terabyte
+
+<img height="400" alt="wolfram-what-2" src="https://github.com/kazad/instacalc/assets/115572/ba9501b9-4fc8-4d45-a4ca-88abc4894fe5">
+
+## Natural unit ratios
+
+<img alt="Screenshot 2024-04-02 at 2 17 32 PM" src="https://github.com/kazad/instacalc/assets/115572/b4b54e6d-48cd-4cdc-a148-0be9b04e546a">
+
+## Natural units
+
+<img height="400" alt="Screenshot 2024-03-21 at 1 54 09 PM" src="https://github.com/kazad/instacalc/assets/115572/764f8e57-0de3-439d-ad4b-c06b84462679">
+
+## MPGe
+
+<img height="400" alt="Screenshot 2023-09-11 at 10 42 18 PM" src="https://github.com/kazad/instacalc/assets/115572/bafa19b5-7a24-48ba-a8e8-b75c37c79ab6">
+
+## Simple conversion
+
+<img src="https://github.com/kazad/instacalc/assets/115572/2406e7f5-b4fa-4d07-b5b9-5debedb1fd9f">
+
+## "Foot" as anatomy, not unit
+
+<img height="400" src="https://github.com/kazad/instacalc/assets/115572/9359fc83-a0af-44bf-ae4b-298805f2da30">
+
+## Arbitrary units
+
+<img src="https://github.com/kazad/instacalc/assets/115572/73f43768-c987-4170-ab35-4841341423f6">
+
+## Computation
+
+<img height="400" src="https://github.com/kazad/instacalc/assets/115572/b6f69dab-71be-4bfb-a26e-a6f4a04c2917">
+
+## Tape measure result not shown in tape measure
+
+<img height="400" src="https://github.com/kazad/instacalc/assets/115572/f3624a08-de57-412d-aaf3-5166c6ac51cf">
+
+In instacalc:
+
+<img src="https://github.com/kazad/instacalc/assets/115572/09ed6919-8f58-47ec-a854-c423dd8ce53a">
+
+## Hex conversion
+
+<img height="200" src="https://github.com/kazad/instacalc/assets/115572/51dfc67c-fb62-4a95-904d-479a0c592163">
+
+<img height="200" src="https://github.com/kazad/instacalc/assets/115572/16982007-bc61-4237-870e-2af86c5d1912">
+
+## MIPS / GHz
+
+<img height="400" src="https://github.com/kazad/instacalc/assets/115572/6393d643-2d90-489a-a451-f9825bb984f1">
+
+## Division of tape measure units
+
+<img height="400" src="https://github.com/kazad/instacalc/assets/115572/5af660a4-fecb-4cea-8470-fad7df3e7c34">
+
+Google does it:
+
+<img height="400" src="https://github.com/kazad/instacalc/assets/115572/96f7a51b-489a-43aa-a832-da1598de25f7">
+
+## Natural Ratios
+
+<img height="400" src="https://github.com/kazad/instacalc/assets/115572/584f108c-ec48-4d61-8804-39910a37f3db">
+
+<img height="400" src="https://github.com/kazad/instacalc/assets/115572/862792f8-5993-4071-bd71-2f7088fe73d5">
+
+## GB as island
+
+<img src="https://github.com/kazad/instacalc/assets/115572/45f32099-47bd-4b3b-9271-0c52e23b57c7">
+
+## Natural rates
+
+<img height="400" src="https://github.com/kazad/instacalc/assets/115572/23480c2d-d83a-4a98-ab47-ef06fe2d214f">
+
+## Amps, Volts, Watts
+
+<img height="400" src="https://github.com/kazad/instacalc/assets/115572/21ca063e-c445-46b2-9aaf-f68f2c9f127d">
+
+<img height="400" src="https://github.com/kazad/instacalc/assets/115572/824129d7-e91b-4b04-833e-238cfeff1853">
+
+## Time range
+
+<img alt="Screenshot 2023-08-11 at 12 10 47 PM" src="https://github.com/kazad/instacalc/assets/115572/2c951316-9e1c-4f91-8ff2-1c3ce08aa66d">
+
+## Natural division rate
+
+<img alt="Screenshot 2023-08-21 at 8 37 39 PM" src="https://github.com/kazad/instacalc/assets/115572/b7fd2c4c-b3d5-49b2-a647-32fc14bb2eef">
+
+## Added conversions
+
+![image](https://github.com/kazad/instacalc/assets/115572/8f4aaa61-9a0f-4292-9972-d30cda30aa6f)
+
+## Hours Until 2000
+
+![image](https://github.com/kazad/instacalc/assets/115572/bec29b4f-e150-4633-91de-860aef8e31cd)
+
+![image](https://github.com/kazad/instacalc/assets/115572/ffa62d63-eaec-46c6-9186-63eee7c614a1)
+
+
+
+## Decibel Conversion: 5 db to number
+
+![](https://private-user-images.githubusercontent.com/115572/353948959-9ebe4c74-2d28-4ed3-9e1a-93094b874b75.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjI0NTA2NzUsIm5iZiI6MTcyMjQ1MDM3NSwicGF0aCI6Ii8xMTU1NzIvMzUzOTQ4OTU5LTllYmU0Yzc0LTJkMjgtNGVkMy05ZTFhLTkzMDk0Yjg3NGI3NS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzMxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDczMVQxODI2MTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMmQ1YTJkZDkwZThlN2FmYTEyNGM4MjBlNGQwMzc3MDBlMjEyNWU0MDkzMjQ2ODJmOTFjMzgzMTJlY2NlMjdhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.QytiZITanBBuVCJwZmF5la5w9_L0mkq3VDHprd3kDyc)
+# Instacalc vs Other Tools
+
+Instacalc is my sweet spot for a calculation tool:
+
+* Easy access: web-based, no install
+* Anonymous sharing / embeds
+* Powerful yet forgiving syntax
+* Hide complex calculations (and still show input parameters)
+* User-friendly (large fonts, reasonably pretty, not a scary grid)
+
+![image](https://github.com/kazad/instacalc/assets/115572/ed7d048e-1d99-421b-90c7-b3647ad15a9e)
+
+Here's a few thoughts on finding the best number crunching tool for the job..
+
+| Tool                   | Features | Ease of Use | Share/Embed |
+| ---------------------- | -------- | ----------- | ----------- |
+| Basic Calculators      | Low      | High        | Low         |
+| Instacalc              | Med/High | Med/High    | High        |
+| Text-based Scratchpads | Med/High | Med/High    | Low         |
+| Spreadsheets           | Med/High | Low         | Low         |
+| Programming Tools      | High     | Low         | Low         |
+
+## Easy: Calculators
+
+<img src="https://github.com/kazad/instacalc/assets/115572/f9582570-6020-48cb-988d-2553274f2ae6" style="height: 250px">
+
+Here's our trusty pocket calculator.
+
+* Likes: Simple, familiar, preinstalled.
+* Limitations: Difficult to do multi-step calcualtions, or edit typos in previous inputs. Hard to see/share thought process. 
+
+Still, like everyone else, I reach for this when I need a fast one-off answer.
+
+## Medium: Calc Scratchpads
+
+<img src="https://github.com/kazad/instacalc/assets/115572/79c37494-69a9-49ab-9868-634695a7ac58" height="200">
+
+<img src="https://github.com/kazad/instacalc/assets/115572/03a4cbf4-6dcc-404e-9830-07a61819309d" height="200">
+
+Soulver, Numi, Apple Notes and other scratchpads take a text-first approach. They are "doc-first": you write text, which is ignored, with calculations sprinked in. (Words are ignored, numbers & symbols are recognized as calculations).
+
+* Likes: Easy editing, can copy/paste multiple lines, minimalist UI
+
+* Limitations: Hard to make a "calculator", with input variables separate from computed results.
+
+  
+
+  For example, here's my blog, explaining Bayes' Theorem:
+
+<img src="https://github.com/kazad/instacalc/assets/115572/1fa33fda-25dc-4310-9dec-318141c96e70" height=400 />
+
+The article has a lot of text. I want a quick way to demo the equation, without reading formulas. Compare the screenshot to the text version:
+
+```
+Bayes Theorem
+
+Actual_probability = 1%                        = 1%
+Prob_true_positive = 80%                       = 80%
+Prob_false_positive = 9.6%                     = 9.6%
+Chance positive test means positive result
+$$(r1 * r2)/((r1 * r2) + r3*(1-r1)) * 100      = 7.76 %
+```
+
+While technically usable, the formula is too much detail when people want to play with the numbers.
+
+Also, most scratchpads have limited syntax (or are built on MathJS), without the full flexibility I wanted (see [Wolfram Alpha compare](/compare-wolfram.md) for what I wanted to handle).
+
+The dedicated apps make it hard to share/embed your numbers (some are web-based, however).
+
+Still, I really like the clean look of these text-first tools. As a homage to that style, I made Calcr, aka instacalc in scratchpad form: https://calcr.com/
+
+<img src="https://github.com/kazad/instacalc/assets/115572/13f92dad-e56c-450c-9d4d-e8b781a1fc5a" height="200">
+
+## Advanced: Excel
+
+Spreadsheets are our familiar, big-mamma-jamma number crunching tool.
+
+<img src="https://github.com/kazad/instacalc/assets/115572/2c78a14d-bb3a-4396-ae90-87a7223befd0" height=200 />
+
+I think the comparison is pretty clear:
+
+* Like: Powerful, well-known
+* Drawback: Overkill for most users. Thousands of cells, tiny fonts, difficult syntax, feels like work, hard to share.
+
+## Advanced: Programming tools (Frink, JS)
+
+<img src="https://github.com/kazad/instacalc/assets/115572/f498d85a-4ea5-4d0f-8573-1ddd1d71912b" height="250">
+
+Programming tools/REPLs can work for quick calculations. However, they are programming languages, with the fiddly syntax, and too difficult for the average user.# Design Philosophy
+
+My goal was to make an effortless, forgiving calculation helper. Like a magical "back of the envelope" that figured out what you meant as you write it.
+
+A few principles:
+
+* **Helpful**. Assume that `1/2 cm` means `0.5 cm`, not `1 / (2cm)`. Don't force gnarly syntax gotchas onto the user.
+* **Do something reasonable, explain assumptions**. `15 miles/hr in /min` probably means  `15 miles/hr -> miles/min`. Right? What else would it mean? So, instead of an error, do a reasonable conversion and explain what happened.
+  * **The user (syntax) is always right**. Let people write how they think, no matter what background they have. `15 x 3` and `15 times 3` and `15 * 3` should all work: the intent is clear. And it's not just beginners: `123 as hex` and `hex(123)` and `123 -> hex` should all work.
+
+
+## Non-goals
+
+When making a calculation tool, you can go down many feature rabbit holes. Here's what I'm not trying to build:
+
+* **High precision scientific computing.** Instacalc handles reasonable floating-point issues  (such as `.1 + .2 == .3`), but we aren't calculating Pi to 1000 digits. Wolfram Alpha is better.
+
+* **Encyclopedia of arcane units.** I've added most imperial, SI units, currencies, etc., but Frink or GNU Units is more complete.
+
+* **Perfect parsing**. The parser has layers of heuristics, cleaning up input before the final parse. It can be tricked. That's ok.
+
+* **Lots of rows**. At some point, the calc UX breaks down and you want Excel. After a few hundred rows you probably want a different tool.
+
+## Idea: On being "Mostly right"
+
+Is the earth a sphere? No. Strictly speaking, it's an oblate spheroid. So should is "earth == sphere" true?
+
+Let's be helpful, on the user's side. In corner cases, explain what happened, and a savvy user can infer the correct thing. And a new user will be _mostly_ right.
+
+## Idea: On making the easy things easy
+
+We should aim for the "least surprising" interpretation. Examples:
+
+* Including `$` auto-formats as currency: `$22/7 = $3.14` (rounded to cents). That's usually what people want. Allow `$$` for quick rounding without the symbol. (Earlier, `$` just did rounding, which was confusing! People wanted the sign.)
+
+* Including `%` auto-formats as percent: `50% = 50%`. Earlier, it always converted to decimal (`50% = .5`). Only convert to decimal when the percent is _used_ in a calculation: `50% * 3 = 1.5`.
+
+* Fractions like `2/3 cm` are `(2/3) cm` and not the strict `2 / (3cm)`. It's _extremely unlikely_ someone wanted inverse cm. If they do, they can write it `2 / (3 cm)` or `2/3 cm^-1`. However, if you write `x = 3cm`, then `2/x` will have units of inverse cm. Yes, yes, the "substitution" isn't the same, but it's what people expect.
+
+## Book: Don't make me think
+
+[Don't make me think](https://sensible.com/dont-make-me-think/) is the best usability reference I've seen. That simple principle helps shape so many decisions.
+
+* If a user types fractions `1/2 + 1/3`, show the result as a decimal _and_ fraction. (They are probably using fraction math!)
+
+<img width="611" alt="Screenshot 2022-11-19 at 9 31 00 AM" src="https://user-images.githubusercontent.com/115572/202863935-3bbb916f-6b12-4eaa-a1ce-6f45573deec8.png">
+
+* If a user types a hex/bin/oct number (`0xff`), show the result in the other formats. (They are probably doing some bit manipulation!)
+
+<img width="601" alt="Screenshot 2022-11-19 at 9 30 46 AM" src="https://user-images.githubusercontent.com/115572/202863922-e2e64bb1-bfa9-4403-9621-47fd5ead0794.png">
+
+Yes, there are conversion functions (`1/2 + 1/3 as fraction` and `0xff as bin`)... but don't make people think! Just show the likely conversions they need.
+
+* If someone writes with tape measure units (`3' 4" + 3'`), they are _probably not_ creating the string `'4" + 3'`. Don't let string parsing rules interfere with natural unit math. Display the output using the same input tape measure format, but _also_ with decimal (don't make people think about the conversion!).
+
+<img width="638" alt="Screenshot 2022-11-19 at 9 40 53 AM" src="https://user-images.githubusercontent.com/115572/202864278-73c55d7b-6871-4c07-b01e-d14b8c865fd4.png">
+
+## On having the right design
+
+As time goes on, changes should get _easier_. It's clearer where a new unit, conversion, etc. should go. Special cases are handled automatically. A design that easily flexes to add new features, without adding more abstractions, feels like the right one.# Calc Example Gallery
+
+<script setup>
+  var ID = "123";
+  var CALC_JSON = '[{"name":"InstaCalc: Row Interface Examples","url":57004},{"name":"InstaCalc: Time Shorthand","url":56740},{"name":"InstaCalc: Reference : Extra Features","url":50013},{"name":"InstaCalc: Excel Stats Functions","url":56789},{"name":"InstaCalc: Retirement Calculator","url":56207},{"name":"InstaCalc: Wolfram Compare","url":57433},{"name":"InstaCalc: Nearest Number","url":56833},{"name":"InstaCalc Beta Preview (Archive)","url":55977},{"name":"InstaCalc: Row Formatting","url":57432},{"name":"InstaCalc: Reference : Programming","url":50008},{"name":"InstaCalc: Reference : Scientific Calculations","url":50007},{"name":"InstaCalc: Number Formats","url":56777},{"name":"InstaCalc: Unit Conversions","url":50012},{"name":"InstaCalc: Excel Financial Functions","url":56788},{"name":"InstaCalc: Key Features","url":50005},{"name":"InstaCalc V2","url":56020},{"name":"InstaCalc: Reference: Basic Commands","url":57484},{"name":"InstaCalc: Reference: Variables and Rows","url":57485},{"name":"InstaCalc: Reference: Conversions","url":57486},{"name":"InstaCalc: Reference : Formatting","url":57487},{"name":"InstaCalc: Reference : Computer Units","url":57488},{"name":"InstaCalc: Reference : Date / Time","url":57489},{"name":"InstaCalc: Excel Compatibility Functions","url":57497},{"name":"InstaCalc: A Powerful, Fun Calculator","url":57627}]';
+
+  var CALC_JSON_2 = '[{"name":"InstaCalc: Roman numerals","url":56716},{"name":"InstaCalc: Finance / Engineering Number Formats","url":56717},{"name":"InstaCalc: SI Unit Gauntlet","url":56724},{"name":"InstaCalc: Datetime Features","url":56747},{"name":"InstaCalc: Date & Time","url":56749},{"name":"InstaCalc: Fuzzier Conversions","url":56853},{"name":"InstaCalc: Rounding tests","url":56906},{"name":"InstaCalc: Scaled units","url":57370},{"name":"InstaCalc: Virtual Units","url":57394},{"name":"InstaCalc: Objects / Arrays","url":57570},{"name":"InstaCalc: Remote data loading","url":57572},{"name":"InstaCalc: Load Calc","url":57573},{"name":"InstaCalc: Construction Calculator","url":57628}]'
+
+import { ref, onMounted, computed } from 'vue';
+
+const calcs = ref([]);
+const selectedCalc = ref(null);
+
+onMounted(() => {
+	let calcs1 = JSON.parse(CALC_JSON);
+	let calcs2 = JSON.parse(CALC_JSON_2);
+  calcs.value = [...calcs1, ...calcs2];
+});
+
+const formattedCalcs = computed(() => {
+  return calcs.value.map(calc => ({
+    ...calc,
+    displayName: calc.name.replace(/^instacalc:\s*/i, '')
+  }));
+});
+
+const selectCalc = (calc) => {
+  selectedCalc.value = calc;
+};
+</script>
+
+<div v-if="selectedCalc">
+  <h2>{{ selectedCalc.displayName }}</h2>
+  <p>
+    <a :href="`https://instacalc.com/${selectedCalc.url}`" target="_blank">{{`https://instacalc.com/${selectedCalc.url}` }}</a>
+  </p>
+  <div class="iframe-container">
+    <iframe :src="`https://instacalc.com/${selectedCalc.url}/embed`" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="gallery">
+  <div 
+    v-for="calc in formattedCalcs" 
+    :key="calc.url" 
+    @click="selectCalc(calc)" 
+    :class="['calc-item', { selected: selectedCalc === calc }]"
+  >
+    {{ calc.displayName }}
+  </div>
+</div>
+
+<component :is="'style'">
+.gallery { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 20px; 
+  margin: 20px 0px; 
+}
+.calc-item { 
+  background-color: var(--vp-c-bg-soft); 
+  padding: 15px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+.iframe-container { 
+  width: 100%; 
+  height: 500px;
+  border: 1px solid #ccc; 
+  margin-top: 20px; 
+}
+iframe { 
+  width: 100%; 
+  height: 100%; 
+  border: none; 
+}
+</component>
+# Power User Features
+
+Along with the full reference, here are some features helpful to power users.
+
+Features are generally announced at: https://github.com/kazad/instacalc/discussions 
+
+* [Calc import/export](https://github.com/kazad/instacalc/discussions/98)
+* [Object/arrays](https://github.com/kazad/instacalc/discussions/93)
+* [Load remote JSON data](https://github.com/kazad/instacalc/discussions/94)
+* [Import calc into another](https://github.com/kazad/instacalc/discussions/95)
+* [Comment string interpolation](https://github.com/kazad/instacalc/discussions/42)
+* [Excel-style functions](https://github.com/kazad/instacalc/discussions/87)
+* [Insert Greek letters](https://github.com/kazad/instacalc/discussions/30)
+* [Function calls and custom formats](https://github.com/kazad/instacalc/discussions/110)
+# UI Features
+
+Instacalc tries to be as friendly as possible. Here's some helpful features to try:
+
+* [Press Enter for new row](https://github.com/kazad/instacalc/discussions/2)
+* [European Mode](https://github.com/kazad/instacalc/discussions/21)
+* [Themes](https://github.com/kazad/instacalc/discussions/6)
+* [Friendly loan/investment syntax](https://github.com/kazad/instacalc/discussions/96)
+* [Auto-expanding input text field](https://github.com/kazad/instacalc/discussions/72)
+* [Automatic total shown](https://github.com/kazad/instacalc/discussions/69)
+* [Up/down buttons for parameters](https://github.com/kazad/instacalc/discussions/65)
+* [Format menu](https://github.com/kazad/instacalc/discussions/33)
+* [Drag and drop rows](https://github.com/kazad/instacalc/discussions/34)
+* [Paste multiple lines](https://github.com/kazad/instacalc/discussions/32)
+* [Display mode](https://github.com/kazad/instacalc/discussions/38)
+* [Inline help messages](https://github.com/kazad/instacalc/discussions/41)
+* [Calc folders](https://github.com/kazad/instacalc/discussions/64)
+* [Keyboard shortcuts](https://github.com/kazad/instacalc/discussions/106)
+
+# Guide: Construction Math
+
+Instacalc can handle lengths written with feet and inches: 
+
+*  `3' 5"`
+* `3' 5 1/2"`
+* `3 feet 5 inches`
+
+Force a result into this format wtih `as tape` or `as tape measure`: 
+
+* `200 inches as tape`
+
+<iframe src="https://instacalc.com/57628/embed" width="100%" height="350" frameborder="0"></iframe>
+
+# Guide: Unit Conversion
+
+Instacalc can handle complex unit conversions, including custom units. The general format:
+
+* `72 C as F`
+* `15 miles/hour in feet/sec`
+* `15 sales/day in minutes/sale`
+* `15 mph @ 10 hours`
+
+The big features are:
+
+* Regular conversions keywords: `in` `as` `into` `->`
+* Custom units / dimensional analysis:
+  * `15 minutes/game in games/hour` treats 'game' as a unit that can be compared. Singular/plurals are handled reasonably well.
+* Autosolve: `@`,  `at` , `with`, which finds the best conversion. Example: 
+  * `15 mph @ 3 hours` results in distance traveled
+  * `200 feet/s @ minutes` results in `feet/minute`
+  * `300 mpg @ $3/gallon @ 10 miles` results in total cost
+  * Autosolve is pretty magical, try it out!
+
+
+
+## Demo
+
+https://instacalc.com/57486
+
+
+<iframe src="https://instacalc.com/57486/embed" width="100%" height="1050" frameborder="0"></iframe>
+
+
+
+# Excel Compatability
+
+Instacalc supports the most common Excel functions (`SUM`, `PMT`, etc.). Other tips: 
+
+* Formulas like `=R1 * 3` work. (The leading `=` isn't needed, but muscle memory!) 
+* Use row ranges like `SUM(R1:R3)` as you'd expect
+
+## Financial Functions
+
+<iframe src="https://instacalc.com/56788/embed" width="100%" height="650" frameborder="0"></iframe>
+
+## Statistics Functions
+
+<iframe src="https://instacalc.com/56789/embed" width="100%" height="650" frameborder="0"></iframe>
+
+## Other Excel Functions
+
+<iframe src="https://instacalc.com/57497/embed" width="100%" height="450" frameborder="0"></iframe># Financial Calculations
+
+Financial calculations (loans, savings) is a oft-needed calculation, and tricky to do by hand.
+
+While you can use Excel-style functions (`PMT`), that is cumbersome. You can now do financial calculations in natural language:
+
+https://instacalc.com/57582
+
+<iframe src="https://instacalc.com/57582/embed" width="100%" height="750" frameborder="0"></iframe>
+
+Behind the scenes, Instacalc finds a keyword (`loan`), sees if relevant parameters are there (time period, rate, amount) and builds the function call. You can directly call `loan(5%, 400k, 30 years)` as well.# Formatting Options
+
+The help text below a result tries to auto-format a result (for example, converting large numbers to 'scaled' versions).
+
+![](https://github.com/user-attachments/assets/cf47c1b7-8449-4390-b993-9f0368175e3a)
+
+![https://github.com/user-attachments/assets/3902346d-8298-4814-876c-4aecc5413af0](https://github.com/user-attachments/assets/3902346d-8298-4814-876c-4aecc5413af0)
+
+Note that `as scaled`, `as decimal`, `as binary` are hinted as the way to get that output.
+
+## Calc format settings
+
+There's a few global settings for each calc:
+
+* Number format (US-style, European style, Asian-style)
+* Rounding (number of digits: none, or to nearest `0.01`, `0.1`, `1`)
+
+## Formatting a result
+
+You can force a result to have a format using `as <format>`, for example: `1234 as eng`.
+
+See the [full refernce](/reference.html) for all formatting options.
+
+<iframe src="https://instacalc.com/57432/embed" width="100%" height="1000" frameborder="0"></iframe># Programming Calculator
+
+Instacalc supports most JS syntax for hex and byte manipulation:
+
+<iframe src="https://instacalc.com/50008/embed" width="100%" height="650" frameborder="0"></iframe>
+
+A few notes:
+
+* While most JS syntax is allowed (`if/else`, `? :`, `"some string"`), loops/functions are not.
+* Data units (`GB`, `MB`) are base 2 (help text explains this). Use `MB_SI` for base 10.
+* Functions can be called in several ways:
+  * `123 as bin`
+  * `123 -> bin`
+  * `bin(123)`
+* Binary operators (`AND`, `XOR`, `NOT`) are usually invoked with that keyword. The operators `&`, `|` and `^` work with binary/hex arguments:  `0x123 ^ 0x456` is `XOR`, not an exponent (root issue: disambiguating the carat symbol `^`).
+
+## Example
+
+Explaining big-endian/little-endian and byte swapping:
+
+<iframe src="https://instacalc.com/1067/embed" width="100%" height="550" frameborder="0"></iframe>
+
+# Science / Engineering Calculations
+
+Instacalc loves science. It supports most imperial and SI units.
+
+## Scientific Calculator
+
+<iframe src="https://instacalc.com/50007/embed" width="100%" height="500" frameborder="0"></iframe>
+
+* Note: Degrees are default: specify radians directly: `sin(2pi rad)`
+
+
+## Scientific Units
+
+<iframe src="https://instacalc.com/56724/embed" width="100%" height="650" frameborder="0"></iframe>
+
+Instacalc works with most SI units, and you can do comparison as seen above.
+* Units can be treated as variables: `cm` is `1 cm`, and you can do `15 * cm`
+* Merge base units to compound with `to SI`: `15 kg m/s^2 to SI => 15 newton`
+* Split compound into base units `to SIBase`: `15 N to SIBase => 15 kg m/s^2`
+* Make compound units with space or multiplication: `15 kg m/s^2` or `15 kg * m/s^2`
+* See the [predefined constants](/reference.html#predefined-variables) for physics constants (`speed of light`, `gravity`, etc.)
+
+# Sharing
+
+Calcs can be shared with a permalink (`instacalc.com/12345`) or added to a website with an embed code.
+
+When a user opens a shared calc, they can make local changes (to play with the numbers), but the original calc is unchanged.
+
+## Demo
+
+```<iframe src="https://instacalc.com/42214/embed" width="450" height="350" frameborder="0"></iframe>```
+
+<iframe src="https://instacalc.com/42214/embed" width="100%" height="450" frameborder="0"></iframe>---
+# https://vitepress.dev/reference/default-theme-home-page
+layout: home
+outline: deep
+
+hero:
+  name: "Instacalc Help"
+  _text: "Guides / Tutorials / Examples"
+  tagline: Guides / tutorials / examples for your favorite calculator
+  image: 
+    _src: "https://instacalc.com/img/pwa/pwa_desktop.png"
+    src: "https://instacalc.com/img/icons/ios/256.png"
+    alt: instacalc
+
+
+  actions:
+    - theme: brand
+      text: Quickstart
+      link: /quickstart
+    - theme: alt
+      text: Command reference
+      link: /reference
+    - theme: alt
+      text: Example Gallery
+      link: /examples
+
+features:
+  - title: Instant Results
+    details: See live answers as you type
+  - title: Effortless Syntax
+    details: Use familiar JS or Excel-style input
+  - title: One-click sharing
+    details: Share calcs with a single click, no login needed
+---
+
+# Test inline calc rendering
+
+
+
+```instacalc
+15 x 13
+2 + 2
+8 * 3
+```
+
+<instacalc>
+
+123 x 456
+
+</instacalc># Markdown Extension Examples
+
+This page demonstrates some of the built-in markdown extensions provided by VitePress.
+
+## Syntax Highlighting
+
+VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+
+**Input**
+
+````md
+```js{4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+````
+
+**Output**
+
+```js{4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+
+## Custom Containers
+
+**Input**
+
+```md
+::: info
+This is an info box.
+:::
+
+::: tip
+This is a tip.
+:::
+
+::: warning
+This is a warning.
+:::
+
+::: danger
+This is a dangerous warning.
+:::
+
+::: details
+This is a details block.
+:::
+```
+
+**Output**
+
+::: info
+This is an info box.
+:::
+
+::: tip
+This is a tip.
+:::
+
+::: warning
+This is a warning.
+:::
+
+::: danger
+This is a dangerous warning.
+:::
+
+::: details
+This is a details block.
+:::
+
+## More
+
+Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+# Privacy Policy
+
+## Analytics
+
+InstaCalc does not collect or share data with 3rd parties for commercial purposes. However, analytics (Microsoft Clarity, Google Analytics, StatCounter, etc.) are used for performance and debugging purposes. This data is not shared.
+
+## Calc Data
+
+* By default, calcs are stored in the browser's Local Storage. No login needed. Calc data is stored in plaintext, though connections to instacalc.com are SSL encrypted.
+* If you log in with Google/Apple, your calcs and preferences are synced to Google Firebase. This lets you sync calcs between a computer, phone, tablet, etc.
+* You can [export](https://github.com/kazad/instacalc/discussions/98) your calcs to a JSON data file.
+
+## Sharing and Search
+
+* When a calc is published, a copy goes to a read-only URL like `https://instacalc.com/123`. As you update your original calc, this URL updates. Other users can browse and make test changes at the public link, but it doesn't change the original.
+* Calcs are not indexed for search by default. If you post a link or embed code publicly (blog, reddit, twitter), then Google may crawl it. The instacalc.com search will surface calcs that appear in Google's index (similar to a Google site search like ` site:instacalc.com keyword`).
+* To unpublish a calc, click the "unshare" button. This erases the shared calc, but keeps the original.# Quickstart
+
+[Instacalc](https://instacalc.com) makes number crunching effortless.
+
+* Solve "back of the envelope" calculations with natural language
+* Use currency, unit and date/time conversions
+* Share/embed live calculator links (no login!)
+* Stress test formulas and easily see the data flow
+* Whip together quick budgets, sales estimates, video game calculators
+
+## Demo
+
+<iframe src="https://instacalc.com/57627/embed" width="100%" height="600" frameborder="0"></iframe>
+
+## Core features
+
+| Feature                  | Details                                                      |
+| ------------------------ | ------------------------------------------------------------ |
+| Instant results          | Results as you type. Click to hide a calculation. |
+| Arithmetic               | Use math symbols (`+ - * /`) or words (`3 x 5` or `3 times 5`) |
+| Natural language         | Write numbers as you'd say them:  `6.6 billion` `5M` `250k`  |
+| Shared links             | Get a permalink (like https://instacalc.com/42214) in one click |
+| Embeds                   | Get an embed code for your website: <br />```<iframe src="https://instacalc.com/42214/embed" width="450" height="350" frameborder="0"></iframe>```<br /><iframe src="https://instacalc.com/42214/embed" width="450" height="350" frameborder="0"></iframe> |
+
+Instacalc should feel like a magic, mind-reading calculator. See the [reference](/reference) for advanced features (programming, units, etc.).
+
+# Giant Reference Page
+
+Here's an all-in-one feature list (`ctrl+f` is your friend!). Each section header opens a live demo.
+
+## [Basic Commands (click for demo)](https://instacalc.com/57484)
+
+```
+Arithmetic (Add, Subtract, Multiply, Divide)
+2 + 2            = 4
+(3 * 5) / 2      = 7.5
+sqrt(9)          = 3
+5^2              = 25
+
+Percentages
+5%               = 5%
+100 * 17%        = 17
+20 + 50%         = 30
+
+Number shorthand
+3.3 k            = 3,300
+200 million      = 200,000,000
+6.6 billion      = 6,600,000,000
+
+Scientific
+1.234e3          = 1,234
+1e-3             = 0.001
+
+Dollar formatting
+$5 / 3           = $1.67
+
+Comments
+30 + 40          = 70 new total
+
+Click result column to show/hide details
+x = 3            = 3 hidden row
+
+```
+
+## [Variables and Rows](https://instacalc.com/57485)
+
+```
+x = 9               = 9
+y = x + 3           = 12
+sqrt(x)             = 3
+x + y               = 21
+r1                  = 9
+r2                  = 12
+sum(r1:r3)          = 24
+average(r1:r3)      = 8
+```
+
+## [Unit Conversions](https://instacalc.com/57486)
+```
+Convert units: to, into, as, ->
+15 feet into inches                                = 180 inches
+
+Unit rates: /, per, every, until
+15 miles/hour into feet/second                     = 22 feet/second
+15 pounds per year in pounds per month             = 1.25 pounds/month
+
+Custom units: plurals handled
+15 sales/day in minutes per sale                   = 96 minutes/sale
+15 sales/day in minutes until 5 sales              = 480 minutes/5 sales
+
+Autoconversion: @, at, with, for, using
+15 mph @ 10 hours                                  = 150 miles
+15 mph @ 100 miles                                 = 6.6667 hour
+150 dollars/sale @ 10 sales/day @ 10 days          = 15,000 dollars
+150 dollars/sale @ 10 sales/day @ 750 dollars      = 0.5 day
+
+Implied Conversion
+15 mph in min                                      = 0.25 miles/min
+15 mph in /min                                     = 0.25 miles/min
+15 mph in km                                       = 24.1402 km/hour
+
+SI units and prefixes (m, s, kg, newton, Pa, kWh...)
+10 N -> base                                       = 10 kg m/s² in SI base units
+10 kg m/s^2                                        = 10 newton automatically merged into compound unit
+
+Weight: oz, lb, g, kg, ug (microgram), ton...
+150 lbs in kg                                      = 68.0389 kg
+
+Length: mile, yard (yd), foot (ft), inch (in), km, m...
+15 feet in inches                                  = 180 inches
+
+Area (square, ^2): acre, square mile, yd^2, in^2, cm^2, cm2...
+2 acres in m^2                                     = 8,093.7128 m²
+
+Volume (cubic, ^3): gallon (gal), quart (qt), pint (pt), cup (cp), fl oz, tbsp, tsp, cubic inch, ft^3, L, mL, cm^3, cc
+1500 cc in cubic inches                            = 91.5356 inches³
+
+Time: second (s/sec), minute (min), hour (hr), day, month, year, decade, century
+3 days in minutes = 4320 minutes                   = 1,440 minutes/days_in_minute
+
+Currency (3-letter code): USD, CAD, AUD, CNY, EUR, JPY, BRL, GBP, IRL, CNY, MXN, HKD...
+15 USD in EUR                                      = 13.82 EUR updated weekly
+
+Stock price lookup
+STOCK(AAPL)                                        last closing price
+
+Construction / Tape Measure
+3' 4" x 2                                          = 6' 8"
+180 cm as tape measure                             = 5' 10 55/64"
+```
+
+## [Cell and Row formatting](https://instacalc.com/57487)
+
+```
+Currency formatting
+$5 / 3                          = $1.67
+
+Add comment with double backslash
+30 + 40                         = 70 new total
+
+Click result to toggle row
+Variables get textboxes
+x =10                           = 10
+calculations (like 1 + 2) get hidden
+1 + 2                           = 3
+comments get hidden
+
+Row formatting
+0x123 as decimal                = 291
+.15 as percent                  = 15%
+.15 as fraction                 = 3/20
+.15 as fraction over 5          = 1/5
+15000 as money                  = 15K
+15000 as scientific             = 1.5e4
+15000 as engineering            = 15e3
+3.5 inches as tape measure      = 3 1/2"
+100 as hex                      = 0x0064
+100 as bin                      = 0b01100100
+100 cm as value                 = 100
+100 cm as unit                  = 1 cm
+100 cm as tape measure          = 3' 3 3/8"
+
+123 as roman                    = CXXIII roman numerals
+1234567 cm as scaled            = 12.3457 km better units
+1234567 as nearest 1k           = 1,235,000
+pi to 2 decimals                = 3.14
+1234 seconds as time            = 20m 34s
+123 as finance as noformat      = 123
+```
+
+## [Other number features](https://instacalc.com/50013)
+
+```
+random                     = 0.82876105
+random(10)                 = 7.89385073
+round(3.51)                = 4
+roundup(3.01)              = 4
+rounddown(3.99)            = 3
+abs(-2)                    = 2
+3!                         = 6
+sum(r6:r7)                 = 8
+max(r3:r7)                 = 6
+average(r3:r7)             = 3.8
+
+fractions and decimal
+1/2 + 1/3 as fraction      = 5/6
+pi as fraction             = 355/113
+
+percentages
+15% of 200                 = 30
+15% off 200                = 170 (discount)
+15 as a % of 200           = 7.5%
+
+greek letter shortcuts (\pi), superscript exponents
+r = 2                      = 2
+πr²                        = 12.56637061
+
+plain english
+fifteen plus five          = 20
+15 squared                 = 225
+```
+
+## [Scientific (Trig, logs, etc.)](https://instacalc.com/50007)
+
+```
+PI                 = 3.14159265 constants
+E                  = 2.71828183
+
+sin(30)            = 0.5 degrees
+sin(PI/4 rad)      = 0.70710678 radians
+exp(2)             = 7.3890561 e^x
+E^2                = 7.3890561 alternative
+ln(2)              = 0.69314718 "ln" is natural log
+log(2)             = 0.30103 "log" is base 10
+log_2(16)          = 4 "log_2" is log base 2
+
+x = 3              = 3
+log_x(100)         = 4.19180655 use any base you like
+6.022e23           = 6.022e23 scientific notation
+```
+
+## [Programming](https://instacalc.com/50008)
+
+```
+hex and binary
+0xff                                                  = 0x00ff
+0b1001                                                = 0b00001001
+255 as hex                                            = 0x00ff conversion-style
+hex(255)                                              = 0x00ff function-style
+bin(9)                                                = 0b00001001
+15 mod 2                                              = 1
+
+binary operators
+bin(19)                                               = 0b00010011
+bin(7)                                                = 0b00000111
+bin(19 and 7)                                         = 0b00000011
+bin(19 or 7)                                          = 0b00010111
+bin(19 xor 7)                                         = 0b00010100
+
+data sizes assume bytes (write GB vs Gbit)
+hex(1MB)                                              = 0x00100000
+60GB / 700MB                                          = 87.77142857
+10 mbit/s in minutes per gigabyte                     = 13.6533 minutes/gigabyte
+
+More examples
+0x56ef xor 0x123a                                     = 0x44d5
+bin(0x56ef xor 0x123a)                                = 0b0100010011010101
+x = 3                                                 = 3
+x > 5                                                 = false
+15 == x * 5                                           = true
+if (x >= 3) {"at least as big"} else {"smaller"}      = at least as big
+
+y = x + 3; y + 10                                     = 16 multiple statements
+```
+
+## [Computer Units](https://instacalc.com/57488)
+
+```
+data sizes
+1kb                                = 1 kb
+10 gb / 5mb                        = 2,048
+15MB * 3                           = 45 MB
+data rates
+1.5 mbps                           = 1.5 mbps
+time(1gb / 1.5 mbps)               = 1h 35m 26s
+
+operations
+15 MFLOPS * 10 mins                = 9,000,000,000 ops
+
+Hz (cycles/sec)
+15 Ghz * 10 bytes/cycle in MB      = 143,051.1475 MB/sec
+```
+
+## [Excel Financial Functions](https://instacalc.com/56788)
+
+```
+loan: 5% interest, 120 payments (10 years x 12 mo), 100k current value
+PMT(5%/12, 10 * 12, 100k)                                         = -1,060.66
+payment ending with positive 50k cash balance
+PMT(5%/12, 10 * 12, 100k, 50k)                                    = -1,382.65
+
+use friendly inline conversions
+PMT(5% per year in per month, 10 years in months, 100k, 50k)      = -1,382.65
+
+IRR(-70k, 12k, 15k, 18k, 21k, 26k)                                = 8.6631%
+RATE(4*12, -200, 8000)                                            = 0.7701%
+IPMT(10%/12, 1, 3*12, 8k)                                         = -66.67
+PPMT(10%/12, 1, 2*12, 2k)                                         = -75.62
+NPER(12% / 12, -100, -1k, 10k, 1)                                 = 59.67386567
+ISPMT(10%/4, 1, 12*4, 10000)                                      = -244.79
+PV(8%/12, 12*20, 500)                                             = -59,777.15
+
+-1k                                                               = -1,000
+1.1k                                                              = 1,100
+2k                                                                = 2,000
+NPV(10%, r17:r19)                                                 = 1,502.63
+```
+
+
+## [Excel Stats Functions](https://instacalc.com/56789)
+
+```
+1                           = 1
+2                           = 2
+3                           = 3
+4                           = 4
+5                           = 5
+
+sum(r1:r5)                  = 15
+product(r1:r5)              = 120
+avg(r1:r5)                  = 3 or mean()
+mode(r1:r5)                 = 5
+max(r1:r5)                  = 5
+min(r1:r5)                  = 1
+
+var(r1:r5)                  = 2
+stddev(r1:r5)               = 1.41421356
+range(r1:r5)                = 4
+count(r1:r5)                = 5
+percentile(r1:r5, 20%)      = 1.8
+
+COMBINATION(10, 2)          = 45 or COMBIN
+PERMUTATION(10, 2)          = 90 or PERMUT
+```
+
+## [Date/Time](https://instacalc.com/57489)
+
+```
+Dates
+today                             = Sun, May 26, 2024
+tomorrow                          = Mon, May 27, 2024
+yesterday                         = Sat, May 25, 2024
+today + 5                         = Fri, May 31, 2024
+today + 5 weeks                   = Sun, Jun 30, 2024
+May 25 - Dec 31                   = 220 days date difference
+
+Date formats
+2024/12/05                        = Thu, Dec 5, 2024 YYYY/MM/DD
+2024.12.05                        = Thu, Dec 5, 2024 YYYY.MM.DD
+5/12/2024                         = Sun, May 12, 2024 MM/DD/YYYY
+5.12.2024                         = Thu, Dec 5, 2024 German style: MM.DD.YYYY
+2023-08-08T13:15:30Z              = Tue, Aug 8, 2023 6:15:30 AM ISO
+
+Timezones
+3pm PST in EST                    = 6:00 PM EDT
+
+Date math
+200 miles / (sept 1 - jun 1)      = 2.1739 miles/day
+any order (absolute value)
+200 miles / (jun 1 - sept 1)      = 2.1739 miles/day
+
+Times: HH:MM by defau
+2:15                              = 2:15
+2:15 + 3 hours                    = 5:15
+
+To get seconds (MM:SS)
+2:15.0                            = 00:02:15 use decimal point
+2m15s                             = 2m 15s use "Xm Ys"
+00:02:15                          = 00:02:15 use leading 00: or 0:
+
+Time calculations
+3:45 * 2                          = 7:30
+26.2 miles / 3:30 in mph          = 7.4857 miles/hour no decimal, hh:mm
+100m / 0:9.8 in mph               = 22.8259 miles/hour with a decimal, mm:ss
+
+Adding times keeps original format
+3:45 + 2:15                       = 6:00
+3h 45m + 2h 15m                   = 6h
+```
+
+The following are extracted from the config data file.
+
+## Number shorthand
+
+```
+    k: 1e3,
+    hundred: 1e2,
+    thousand: 1e3,
+
+    M: 1e6, // capital
+    million: 1e6,
+    mln: 1e6,
+    mio: 1e6, // german, somehow getting more commmon
+
+    // TODO: have language packs which can add new units/scales? 
+
+    b: 1e9,
+    billion: 1e9,
+    bil: 1e9,
+    bn: 1e9,
+    bln: 1e9,
+    milliard: 1e9,
+
+    t: 1e12,
+    trillion: 1e12,
+
+    quadrillion: 1e15,
+    quintillion: 1e18,
+    sextillion: 1e21,
+    septillion: 1e24,
+
+    rad: 180 / Math.PI,
+    radian: 180 / Math.PI,
+    radians: 180 / Math.PI,
+
+    googol: 1e100,
+    googolplex: 1e1000,
+```
+
+## Formatting Options
+
+Demo: https://instacalc.com/57432
+
+|Name of formatter|Description|Example|
+|--- |--- |--- |
+|percent, pct, %|Formats the result as a percentage|.666 as percent = 66.6%|
+|fraction, frac|Formats the result as a fraction|.6666666 as fraction = 2/3|
+|fraction / N|Formats the result as a fraction with a specific denominator|.666 as fraction/10 = 7/10|
+|decimal, dec|Formats the result as a decimal number|2/3 as decimal = 0.66666667|
+|hexadecimal, hex|Formats the result as a hexadecimal number|255 as hexadecimal = 0x00ff|
+|octal, oct|Formats the result as an octal number|255 as octal = 0o377|
+|binary, bin|Formats the result as a binary number|255 as binary = 0b11111111|
+|roman numeral, roman|Formats the result as a Roman numeral|255 as roman = CCLV|
+|scientific, sci|Formats the result in scientific notation|12345 as scientific = 1.2345e4|
+|engineering, eng|Formats the result in engineering notation|12345 as engineering = 12.345e3|
+|SI|Combines base units into compound SI unit| 15 kg m/s^2 as si = 15 newton|
+|SIbase, base, metric|Separates compound unit into base SI units| 15 newton -> sibase = 15 kg m/s^2|
+|finance, money|Formats the result in financial notation (K/M/B)|1234567 as finance = 1.2M|
+|scaled|Scales the result to the best unit|1234567 cm as scaled = 12.3457 km|
+|unit|Extracts unit from result | 12 cm as unit = 1 cm|
+|value, val, number, num|Extracts raw number from result| 12 cm as value = 12|
+|nearest X|Rounds the result to the nearest X|1234567 as nearest 100000 = 1,200,000|
+|N decimal places|Rounds the result to N decimal places|1.2345 to 2 decimal places = 1.23|
+|tape measure, tape|Formats the result as a tape measure (feet and inches)|1.5 feet as tape = 1' 6"|
+|time|Formats a time result in unit format (Xh Ym Zs)|3661 seconds as time = 1h 1m 1s|
+|noformat|Removes any formatting from the result|1.23 as finance as noformat = 1.23|
+
+## Predefined variables
+
+```
+
+    TAU: 2 * Math.PI,
+    PI: Math.PI,
+    E: Math.E,
+    LOG10E: Math.LOG10E,
+    LOG2E: Math.LOG2E,
+    LN10: Math.LN10,
+    LN2: Math.LN2,
+    SQRT1_2: Math.SQRT1_2,
+    PHI: (1 + Math.sqrt(5)) / 2,
+    RAD: 180 / Math.PI, // acts like a constant as well
+    RADIAN: 180 / Math.PI,
+    RADIANS: 180 / Math.PI,
+    RANDOM: () => Math.random(),
+
+    // phystics constants
+    GRAVITY: () => IC.makeICObject(9.8, "m/s^2"),
+    SPEED_OF_LIGHT: () => IC.makeICObject(299792458, "m/s"),
+    C_LIGHT: () => IC.makeICObject(299792458, "m/s"),
+    SMALLG: () => IC.makeICObject(9.8, "m/s^2"),
+    BIGG: () => IC.makeICObject(6.67408e-11, "m^3/kg/s^2"),
+    PLANCK: () => IC.makeICObject(6.62607015e-34, "J s"),
+    PLANCK_REDUCED: () => IC.makeICObject(6.62607015e-34 / (2 * Math.PI), "J*s"),
+    HBAR: () => IC.makeICObject(6.62607015e-34 / (2 * Math.PI), "J s"),
+    ELECTRON_CHARGE: () => IC.makeICObject(1.602176634e-19, "coulomb"),
+    ELECTRON_MASS: () => IC.makeICObject(9.1093837015e-31, "kg"),
+    PROTON_MASS: () => IC.makeICObject(1.67262192369e-27, "kg"),
+    NEUTRON_MASS: () => IC.makeICObject(1.67492749804e-27, "kg"),
+    R_GAS: () => IC.makeICObject(8.31446261815324, "J/K/mol"),
+    F_FARADAY: () => IC.makeICObject(96485.33212331001, "coulomb/mol"),
+    AVOGADRO_CONST: () => IC.makeICObject(6.02214076e23, "1/mol"),
+    K_BOLTZMANN: () => IC.makeICObject(1.380649e-23, "J/K"),
+
+```
+
+* `15 kg * gravity => 147 newton` 
+* Underscores can be swapped with spaces: `speed_of_light` or `speed of light`
+
+## Function Help Reference
+
+```
+
+    "hex": "hex(x) | convert x to hexadecimal, hex(255) = 0xff",
+    "oct": "oct(x) | convert x to octal, oct(255) = 0377",
+    "bin": "bin(x) | convert x to binary, bin(255) = 0b11111111",
+    "dec": "dec(x) | convert x to decimal, dec(0xFF) = 255",
+
+    if: "if (condition) { result } else { result } | if (age >= 18) { \"adult\" } else { \"child\" } \n IF(condition, true result, false result) | IF(age >= 18, \"adult\", \"child\") // excel-style",
+
+    sin: "sin(x) | sine of x (degrees) | sin(2pi rad) for radians",
+    cos: "cos(x) | cosine of x (degrees) | cos(2pi rad) for radians",
+    tan: "tan(x) | tangent of x (degrees) | tan(2pi rad) for radians",
+    sec: "sec(x) | secant of x (degrees) | sec(2pi rad) for radians",
+    csc: "csc(x) | cosecant of x (degrees) | csc(2pi rad) for radians",
+    cot: "cot(x) | cotangent of x (degrees) | cot(2pi rad) for radians",
+
+    asin: "asin(x) | arcsine of x (result in degrees)",
+    acos: "acos(x) | arccosine of x (result in degrees)",
+    atan: "atan(x) | arctangent of x (result in degrees)",
+    atan2: "atan2(y, x) | arctangent of y/x (result in degrees)",
+    asec: "asec(x) | arcsecant of x (result in degrees)",
+    acsc: "acsc(x) | arccosecant of x (result in degrees)",
+    acot: "acot(x) | arccotangent of x (result in degrees)",
+
+    sinh: "sinh(x) | hyperbolic sine",
+    cosh: "cosh(x) | hyperbolic cosine",
+    tanh: "tanh(x) | hyperbolic tangent",
+    sech: "sech(x) | hyperbolic secant",
+    csch: "csch(x) | hyperbolic cosecant",
+    coth: "coth(x) | hyperbolic cotangent",
+    asinh: "asinh(x) | hyperbolic arcsine of x",
+    acosh: "acosh(x) | hyperbolic arccosine of x",
+    atanh: "atanh(x) | hyperbolic arctangent of x",
+    asech: "asech(x) | hyperbolic arcsecant of x",
+    acsch: "acsch(x) | hyperbolic arccosecant of x",
+    acoth: "acoth(x) | hyperbolic arccotangent of x",
+
+    abs: "abs(x) | absolute value of x",
+    ceil: "ceil(x) | ceiling of x",
+    floor: "floor(x) | floor of x",
+    round: "round(x, [decimal places]) | rounds number: round(pi) = 3, round(pi, 2) = 3.14, round(pi, .01) = 3.14",
+    roundup: "roundup(x) | round up to nearest integer",
+    rounddown: "rounddown(x) | round down to nearest integer",
+    trunc: "trunc(x) | truncate to integer",
+    int: "int(x) | truncate to integer",
+    integer: "integer(x) | truncate to integer",
+
+    hypot: "hypot(x, y) | sqrt(x^2 + y^2)",
+    exp: "exp(x) | e^x",
+    ln: "ln(x) | natural log of x",
+    log: "log(x) | log base 10 of x",
+    log2: "log2(x) | log base 2 of x",
+    log_2: "log2(x) | log base 2 of x",
+    log10: "log10(x) | log base 10 of x",
+    log_10: "log10(x) | log base 10 of x",
+    sqrt: "sqrt(x) | square root of x",
+    cuberoot: "cuberoot(x) | cube root of x",
+    pow: "pow(x, y) | x to power y: x^y",
+    root: "root(x) | square root of x",
+
+    time: "time(seconds) | convert seconds to HMS, time(10000) = 2h 46m 40s",
+
+    mod: "mod(x, y) | x modulo (remainder) y",
+    gcd: "gcd(x, y) | greatest common divisor of x and y",
+    lcm: "lcm(x, y) | least common multiple of x and y",
+    sign: "sign(x) | sign of x (-1, 0, or 1)",
+    clamp: "clamp(x, min, max) | min <= x <= max",
+    erf: "erf(x) | error function",
+    erfinverse: "erfinverse(x) | inverse error function",
+    gamma: "gamma(x) | gamma function",
+
+    square: "square(x) | x^2",
+    cube: "cube(x) | x^3",
+
+    max: "max(r1:r3) or max(x, y, ...) | maximum of values",
+    min: "min(r1:r3) or min(x, y, ...) | minimum of values",
+    avg: "avg(r1:r3) or avg(x, y, ...) | average of values",
+    sum: "sum(r1:r3) or sum(x, y, ...) | sum of values",
+    total: "total(r1:r3) or total(x, y, ...) | sum of values",
+    average: "average(r1:r3) or average(x, y, ...) | average of values",
+    product: "product(r1:r3) or product(x, y, ...) | product of values",
+    sub: "sub(x, y) | subtract y from x",
+    subtract: "subtract(x, y) | subtract y from x",
+    divide: "divide(x, y) | divide x by y",
+    quotient: "quotient(x, y) | divide x by y",
+
+    mean: "mean(r1:r3) or mean(x, y, ...) | mean of values",
+    mode: "mode(r1:r3) or mode(x, y, ...) | mode of values",
+    median: "median(r1:r3) or median(x, y, ...) | median of values",
+    geomean: "geomean(r1:r3) or geomean(x, y, ...) | geometric mean of values",
+
+    var: "var(r1:r3) or var(x, y, ...) | sample variance of values",
+    variance: "variance(r1:r3) or variance(x, y, ...) | sample variance of values",
+
+    "var.s": "var.s(r1:r3) or var.s(x, y, ...) | sample variance of values",
+    "var.p": "var.p(r1:r3) or var.p(x, y, ...) | population variance of values",
+
+    covar: "covar(r1:r3) or var(x, y, ...) | population covariance of values",
+    covariance: "covariance(r1:r3) or variance(x, y, ...) | population covariance of values",
+
+    "covar.s": "var.s(r1:r3) or var.s(x, y, ...) | sample variance of values",
+    "covar.p": "var.p(r1:r3) or var.p(x, y, ...) | population variance of values",
+    "covariance.s": "var.s(r1:r3) or var.s(x, y, ...) | sample variance of values",
+    "covariance.p": "var.p(r1:r3) or var.p(x, y, ...) | population variance of values",
+
+    slope: "slope(known_y's, known_x's) | slope of the linear regression line (Excel)",
+    intercept: "intercept(known_y's, known_x's) | y-intercept of the linear regression line (Excel)",
+    correl: "correl(array1, array2) | correlation coefficient between two data sets (Excel)",
+    linest: "linest(known_y's, known_x's, [const], [stats]) | linear regression line (Excel)",
+    forecast: "forecast(x, known_y's, known_x's) | forecast value on the linear regression line (Excel)",
+    confidence: "confidence(alpha, standard_dev, size) | confidence interval for population mean (Excel)",
+
+    stddev: "stddev(r1:r3) or stddev(x, y, ...) | sample standard deviation of values",
+    stdev: "stdev(r1:r3) or stddev(x, y, ...) | sample standard deviation of values",
+
+    "stdev.s": "stdev.s(r1:r3) or stdev.s(x, y, ...) | sample standard deviation of values",
+    "stdev.p": "stdev.p(r1:r3) or stdev.p(x, y, ...) | population standard deviation of values",
+
+    kurt: "kurtosis(r1:r3) | sample kurtosis of values (Excel)",
+    kurtosis: "kurtosis(r1:r3) | sample kurtosis of values (Excel)",
+    skewness: "skew(array) | sample skewness of values (Excel)",
+    skew: "skew(array) | sample skewness of values (Excel)",
+
+    "norm.s.inv": "norm.s.inv(p) | inverse of standard normal cumulative distribution function (Excel)",
+    "normsinv": "norm.s.inv(p) | inverse of standard normal cumulative distribution function (Excel)",
+    "norminv": "norm.inv(p) | inverse of normal cumulative distribution function (Excel)",
+    "norm.dist": "norm.dist(x, mean, standard_dev, cumulative) | normal distribution function (Excel)",
+    "normdist": "norm.dist(x, mean, standard_dev, cumulative) | normal distribution function (Excel)",
+    "norm.s.dist": "norm.s.dist(z, cumulative) | standard normal distribution function (Excel)",
+    "normsdist": "norm.s.dist(z, cumulative) | standard normal distribution function (Excel)",
+    "t.inv": "t.inv(probability, degrees_freedom) | inverse of Student's t-distribution (Excel)",
+    "tinv": "t.inv(probability, degrees_freedom) | inverse of Student's t-distribution (Excel)",
+    "t.dist": "t.dist(x, degrees_freedom, cumulative) | Student's t-distribution function (Excel)",
+    "tdist": "t.dist(x, degrees_freedom, cumulative) | Student's t-distribution function (Excel)",
+    "chisq.dist": "chisq.dist(x, degrees_freedom, cumulative) | chi-square distribution function (Excel)",
+    "chisqdist": "chisq.dist(x, degrees_freedom, cumulative) | chi-square distribution function (Excel)",
+    "f.dist": "f.dist(x, degrees_freedom1, degrees_freedom2, cumulative) | F-distribution function (Excel)",
+    "fdist": "f.dist(x, degrees_freedom1, degrees_freedom2, cumulative) | F-distribution function (Excel)",
+    "z.test": "z.test(array, x, [sigma]) | z-test for mean (Excel)",
+    "ztest": "z.test(array, x, [sigma]) | z-test for mean (Excel)",
+    "t.test": "t.test(array1, array2, [tails], [type]) | t-test for means (Excel)",
+    "ttest": "t.test(array1, array2, [tails], [type]) | t-test for means (Excel)",
+
+    "t.dist.2t": "t.dist.2t(x, degrees_freedom) | two-tailed Student's t-distribution function (Excel)",
+    "tdist2t": "t.dist.2t(x, degrees_freedom) | two-tailed Student's t-distribution function (Excel)",
+    "t.dist.rt": "t.dist.rt(x, degrees_freedom) | right-tailed Student's t-distribution function (Excel)",
+    "tdistrt": "t.dist.rt(x, degrees_freedom) | right-tailed Student's t-distribution function (Excel)",
+    "t.inv.2t": "t.inv.2t(probability, degrees_freedom) | two-tailed inverse of Student's t-distribution (Excel)",
+    "tinv2t": "t.inv.2t(probability, degrees_freedom) | two-tailed inverse of Student's t-distribution (Excel)",
+    "chisq.dist.rt": "chisq.dist.rt(x, degrees_freedom) | right-tailed chi-square distribution function (Excel)",
+    "chisqdistrt": "chisq.dist.rt(x, degrees_freedom) | right-tailed chi-square distribution function (Excel)",
+    "chisq.inv": "chisq.inv(probability, degrees_freedom) | inverse of chi-square distribution function (Excel)",
+    "chisqinv": "chisq.inv(probability, degrees_freedom) | inverse of chi-square distribution function (Excel)",
+    "chisq.inv.rt": "chisq.inv.rt(probability, degrees_freedom) | right-tailed inverse of chi-square distribution function (Excel)",
+    "chisqinvrt": "chisq.inv.rt(probability, degrees_freedom) | right-tailed inverse of chi-square distribution function (Excel)",
+    "f.dist.rt": "f.dist.rt(x, degrees_freedom1, degrees_freedom2) | right-tailed F-distribution function (Excel)",
+    "fdistrt": "f.dist.rt(x, degrees_freedom1, degrees_freedom2) | right-tailed F-distribution function (Excel)",
+    "f.inv": "f.inv(probability, degrees_freedom1, degrees_freedom2) | inverse of F-distribution function (Excel)",
+    "finv": "f.inv(probability, degrees_freedom1, degrees_freedom2) | inverse of F-distribution function (Excel)",
+    "f.inv.rt": "f.inv.rt(probability, degrees_freedom1, degrees_freedom2) | right-tailed inverse of F-distribution function (Excel)",
+    "finvrt": "f.inv.rt(probability, degrees_freedom1, degrees_freedom2) | right-tailed inverse of F-distribution function (Excel)",
+
+    "binom.dist": "binom.dist(x, trials, probability_s, cumulative) | binomial distribution function (Excel)",
+    "binomdist": "binom.dist(x, trials, probability_s, cumulative) | binomial distribution function (Excel)",
+    "negbinom.dist": "negbinom.dist(x, r, p, cumulative) | negative binomial distribution function (Excel)",
+    "negbinomdist": "negbinom.dist(x, r, p, cumulative) | negative binomial distribution function (Excel)",
+    "weibull.dist": "weibull.dist(x, alpha, beta, cumulative) | Weibull distribution function (Excel)",
+    "weibulldist": "weibull.dist(x, alpha, beta, cumulative) | Weibull distribution function (Excel)",
+    "poisson.dist": "poisson.dist(x, mean, cumulative) | Poisson distribution function (Excel)",
+    "poissondist": "poisson.dist(x, mean, cumulative) | Poisson distribution function (Excel)",
+    "gamma.dist": "gamma.dist(x, alpha, beta, cumulative) | gamma distribution function (Excel)",
+    "gammadist": "gamma.dist(x, alpha, beta, cumulative) | gamma distribution function (Excel)",
+
+    range: "range(r1:r3) or range(x, y, ...) | range of values",
+    count: "count(r1:r3) or count(x, y, ...) | count of values",
+    percentile: "percentile(r1:r3, p) or percentile(x, y, ..., p) | pth percentile of values",
+    percentrank: "percentrank(r1:r3, x, [sig (optional)]) or percentrank(x, y, ..., x) | percent rank of x in values, to [sig] digits (Excel)",
+
+    combin: "combination(n, k) | n choose k",
+    combination: "combination(n, k) | n choose k",
+    c: "combination(n, k) | n choose k",
+    permut: "permutation(n, k) | n permute k",
+    permutation: "permutation(n, k) | n permute k",
+    p: "permutation(n, k) | n permute k",
+
+    // excel functions
+    pmt: "PMT(rate, nper, pv, [fv (optional)], [type]) | loan payment (Excel)",
+    ipmt: "IPMT(rate, per, nper, pv, [fv (optional)], [type]) | interest payment (Excel)",
+    ppmt: "PPMT(rate, per, nper, pv, [fv (optional)], [type]) | payment on the principal (Excel)",
+
+    ispmt: "ISPMT(rate, per, nper, pv) | interest payment specific period (Excel)",
+
+    pv: "PV(rate, nper, pmt, [fv (optional)], [type]) | present value of an investment (Excel)",
+    fv: "FV(rate, nper, pmt, [pv (optional)], [type]) | future value of an investment (Excel)",
+    irr: "IRR(values, [guess (optional]) | internal rate of return (Excel)",
+    npv: "NPV(rate, r1:r5) or NPV(rate, val1, val2...) | net present value (Excel)",
+
+    rate: "RATE(nper, pmt, pv, [fv (optional)], [type], [guess]) | interest rate per period of an annuity (Excel)",
+    nper: "NPER(rate, pmt, pv, [fv (optional)], [type]) | number of periods for an annuity (Excel)",
+
+    rri: "RRI(nper, pv, fv) | interest rate per period of an annuity (Excel)",
+    pduration: "PDURATION(rate, pv, fv) | number of periods for an annuity (Excel)",
+
+    loan: "loan(amount, rate, term) | loan payment: loan(400k, 5%, 30y)",
+    invest: "invest(amount, rate, term) | future value of investment: invest(200/month, 5%, 30y)",
+    interest: "interest(amount, rate, term) | interest cost of loan: interest(200/month, 5%, 30y)",
+
+    stock: "stock(symbol) | stock price: STOCK(AAPL)",
+    import: "import(json_url) | import data from public URL to object",
+    fib: "fib(n) | returns the nth Fibonacci number",
+    fibonacci: "fibonacci(n) | returns the nth Fibonacci number",
+    fac: "fac(n) | returns the factorial of n",
+    factorial: "factorial(n) | returns the factorial of n",
+    nchoosek: "nchoosek(n, k) | returns the binomial coefficient of n and k",
+
+    sigfig: "sigfig(x, n) | round to n significant figures, sigfig(123.456, 2) = 120",
+```
+
+Function help appears below your input as you type ([details](https://github.com/kazad/instacalc/discussions/44)).
+
+## Plain English Operations
+
+```
+    add: "+",
+    "added to": "+",
+    plus: "+",
+    minus: "-",
+    times: "*",
+    "multiply by": "*",
+    "by": "*",
+    mul: "*",
+    multiply: "*",
+    "multiplied by": "*",
+    div: "/",
+    "divide by": "/",
+    "divided by": "/",
+    "out of": "/",
+    "over": "/",
+    "subtracted from": "* -1 +",
+    "take away": "-",
+    "to the power of": "^",
+    "to the power": "^",
+    "raised to the power of": "^",
+    "raised to the power": "^",
+    "raised to": "^",
+    "power": "^",
+    "pow": "^",
+    "half of": "0.5 *",
+
+    "is": " = ",
+    "are": " = ",
+    "equals": " = ",
+
+    sub: "-",
+    subtract: "-",
+    negative: "-", // three plus negative two: 3+ -2
+    modulo: " mod",
+
+    // full names for math functions
+    cosine: "cos ",
+    sine: "sin ",
+    tangent: "tan ",
+    cotangent: "cot ",
+    secant: "sec ",
+    cosecant: "csc ",
+
+    // remember: longest match first
+    "is what percentage of": " :pctof: ",
+    "is what percent of": " :pctof: ",
+    "is what pct of": " :pctof: ",
+    "is what % of": " :pctof: ",
+    "is what of": " :pctof: ",
+    "as a percentage of": " :pctof: ",
+    "as a percent of": " :pctof: ",
+    "as a pct of": " :pctof: ",
+    "as a % of": " :pctof: ",
+
+    "% of what is": "% inverse *", // 20% of what is 30 => 20% inverse * 30
+
+    "choose": ":choose:",
+    "pick": ":choose:", // wolfram alpha uses pick as choose
+    "permute": ":permute:",
+
+    "percentage of": "% of ",
+    "percent of": "% of ",
+    "pct of": "% of ",
+
+    // conversion words
+    "into a": " -> ",
+    "to a": " -> ",
+    "as a": " -> ",
+    "in a": " -> ",
+
+    "convert to": " -> ",
+    "convert": " -> ",
+    "as": " -> ",
+    "into": " -> ",
+    "to": " -> ",
+    // no "in" because it could be "inch"
+
+    // typesolve words
+    "using": " @ ",
+    "with": " @ ",
+    "at": " @ ",
+    "for": " @ ",
+
+    "per": "/",
+    "every": "/",
+    "until": "/",
+```
+
+* `15 times 3`
+* `half of 27`
+* `13 is what percent of 25`
+* `15 lbs convert to kg`
+* `15 mph for 3 hours`
+* `15 feet per day in feet per year`
+
+## Alternate symbols
+
+```
+    "×": "*",
+    "✕": "*", // multiplication X
+    "÷": "/",
+    "⁄": "/",
+    "\u2212": "-",
+    "–": "-",       // en dash
+    "—": "-",       // em dash
+
+    "**": "^",      // treat ** as ^ for all conversions, units, etc.
+
+    "•": "*", // bullet
+    "·": "*", // middot
+
+    "√": "sqrt",
+    "∛": "cbrt",
+
+    "≠": "!=",
+    "≤": "<=",
+    "≥": ">=",
+
+    "°": "deg", // degree
+
+    // constants
+    "\u03C0": "(PI)",
+    "\u03C6": "(PHI)",
+    "\u03C4": "(TAU)",
+```
+
+* Usually not typed, these may come in via copy-paste of text
+
+## Currency shorthand
+
+```
+    yen: "(JPY, Japanese Yen)",
+    euro: "(EUR, Euro)",
+    yuan: "(CNY, Chinese Yuan)",
+    rupee: "(INR, Indian Rupee)",
+    peso: "(MXN, Mexican Peso)",
+    ruble: "(RUB, Russian Ruble)",
+    ringgit: "(MYR, Malaysian Ringgit)",
+    won: "(KRW, South Korean Won)",
+    loonie: "(CAD, Canadian Dollar)",
+    aussie: "(AUD, Australian Dollar)",
+    baht: "(THB, Thai Baht)",
+    dirham: "(AED, United Arab Emirates Dirham)",
+    lira: "(TRY, Turkish Lira)",
+    riyal: "(SAR, Saudi Riyal)",
+    lev: "(BGN, Bulgarian Lev)",
+    zloty: "(PLN, Polish Zloty)",
+    krona: "(SEK, Swedish Krona)",
+    franc: "(CHF, Swiss Franc)",
+    quetzal: "(GTQ Guatemalan Quetzal)",
+    shekel: "(ILS, Israeli Shekel)",
+    dong: "(VND, Vietnamese Dong)",
+    dinar: "(KWD, Kuwaiti Dinar)",
+    kuna: "(HRK, Croatian Kuna)",
+    birr: "(ETB, Ethiopian Birr)",
+    taka: "(BDT, Bangladeshi Taka)",
+    forint: "(HUF, Hungarian Forint)",
+    rupiah: "(IDR, Indonesian Rupiah)",
+    kyat: "(MMK, Burmese Kyat)",
+    naira: "(NGN, Nigerian Naira)",
+    bolivar: "(VES, Venezuelan Bolivar)",
+```
+
+* `15 dollars in loonie`
+* `200 yen in USD`
+
+## Symbol insertion: "\symbol", like `\Alpha`
+
+```
+    // operators - https://www.classe.cornell.edu/~dms79/LectureNotes/formulae/list-of-math-symbols-extended.htm 
+    plus: "\u002B",
+    minus: "\u2212",
+    times: "\u00D7",
+    mult: "\u00D7",
+    div: "\u00F7",
+
+    lt: "<",
+    gt: ">",
+    ne: "≠",
+    "!=": "≠",
+    eq: "=",
+    le: "≤",
+    "<=": "≤",
+    ge: "≥",
+    ">=": "≥",
+
+    root: "\u221A",
+    sqrt: "\u221A",
+    cbrt: "\u221B",
+
+    // exponents
+    "0": "\u2070",
+    "1": "\u00B9", // ¹
+    "2": "\u00B2", // ² 
+    "3": "\u00B3", // ³ 
+    "4": "\u2074",
+    "5": "\u2075",
+    "6": "\u2076",
+    "7": "\u2077",
+    "8": "\u2078",
+    "9": "\u2079",
+
+    // neg exponents
+    "-0": "\u207B\u2070",
+    "-1": "\u207B\u00B9", // ¹
+    "-2": "\u207B\u00B2", // ² 
+    "-3": "\u207B\u00B3", // ³ 
+    "-4": "\u207B\u2074",
+    "-5": "\u207B\u2075",
+    "-6": "\u207B\u2076",
+    "-7": "\u207B\u2077",
+    "-8": "\u207B\u2078",
+    "-9": "\u207B\u2079",
+
+    // subscripts
+    "_0": "\u2080",
+    "_1": "\u2081",
+    "_2": "\u2082",
+    "_3": "\u2083",
+    "_4": "\u2084",
+    "_5": "\u2085",
+    "_6": "\u2086",
+    "_7": "\u2087",
+    "_8": "\u2088",
+    "_9": "\u2089",
+
+    // latex symbols
+    dot: "·",
+    bullet: "\u2022",
+    cdot: "·",
+    deg: "\u00B0",
+
+    // calc symbols
+    del: "∂",
+    partial: "∂",
+    grad: "∇",
+    nabla: "∇",
+    angle: "∠",
+    triangle: "△",
+    star: "★",
+    sum: "\u03A3", // sigma
+    int: "∫",
+    oint: "∮",
+    prop: "∝",
+    propto: "∝",
+    approx: "≈",
+
+    // greeks - http://www.javascripter.net/faq/greekletters.htm
+    Alpha: "\u0391", // Α,
+    Beta: "\u0392", // Β,
+    Gamma: "\u0393", // Γ,
+    Delta: "\u0394", // Δ,
+    Epsilon: "\u0395", // Ε,
+    Zeta: "\u0396", // Ζ,
+    Eta: "\u0397", // Η,
+    Theta: "\u0398", // Θ,
+    Iota: "\u0399", // Ι,
+    Kappa: "\u039A", // Κ,
+    Lambda: "\u039B", // Λ,
+    Mu: "\u039C", // Μ,
+    Nu: "\u039D", // Ν,
+    Xi: "\u039E", // Ξ,
+    Omicron: "\u039F", // Ο,
+    Pi: "\u03A0", // Π,
+    Rho: "\u03A1", // Ρ,
+    Sigma: "\u03A3", // Σ,
+    Tau: "\u03A4", // Τ,
+    Upsilon: "\u03A5", // Υ,
+    upsih: "\u03D2", // ϒ,
+    Phi: "\u03A6", // Φ,
+    Chi: "\u03A7", // Χ,
+    Psi: "\u03A8", // Ψ,
+    Omega: "\u03A9", // Ω,
+    alpha: "\u03B1", // α,
+    beta: "\u03B2", // β,
+    gamma: "\u03B3", // γ,
+    delta: "\u03B4", // δ,
+    epsilon: "\u03B5", // ε,
+    zeta: "\u03B6", // ζ,
+    eta: "\u03B7", // η,
+    theta: "\u03B8", // θ,
+    thetasym: "\u03D1", // ϑ,
+    iota: "\u03B9", // ι,
+    kappa: "\u03BA", // κ,
+    lambda: "\u03BB", // λ,
+    mu: "\u03BC", // μ,
+    nu: "\u03BD", // ν,
+    xi: "\u03BE", // ξ,
+    omicron: "\u03BF", // ο,
+    pi: "\u03C0", // π,
+    piv: "\u03D6", // ϖ,
+    rho: "\u03C1", // ρ,
+    sigmaf: "\u03C2", // ς,
+    sigma: "\u03C3", // σ,
+    tau: "\u03C4", // τ,
+    upsilon: "\u03C5", // υ,
+    phi: "\u03C6", // φ,
+    chi: "\u03C7", // χ,
+    psi: "\u03C8", // ψ,
+    omega: "\u03C9", // ω,
+
+    // other symbols
+    rightarrow: "→",
+    infty: "∞",
+
+    micro: "µ",
+
+    // curisve script
+    // https://www.w3.org/TR/xml-entity-names/1D4.html
+    // Idea: let people enter variables, constants, etc. that don't interfere
+    // with built-in units (c), etc.
+    A: "𝓐",
+    B: "𝓑",
+    C: "𝓒",
+    D: "𝓓",
+    E: "𝓔",
+    F: "𝓕",
+    G: "𝓖",
+    H: "𝓗",
+    I: "𝓘",
+    J: "𝓙",
+    K: "𝓚",
+    L: "𝓛",
+    M: "𝓜",
+    N: "𝓝",
+    O: "𝓞",
+    P: "𝓟",
+    Q: "𝓠",
+    R: "𝓡",
+    S: "𝓢",
+    T: "𝓣",
+    U: "𝓤",
+    V: "𝓥",
+    W: "𝓦",
+    X: "𝓧",
+    Y: "𝓨",
+    Z: "𝓩",
+
+    a: "𝒂",
+    b: "𝒃",
+    c: "𝒄",
+    d: "𝒅",
+    e: "𝒆",
+    f: "𝒇",
+    g: "𝒈",
+    h: "𝒉",
+    i: "𝒊",
+    j: "𝒋",
+    k: "𝒌",
+    l: "𝒍",
+    m: "𝒎",
+    n: "𝒏",
+    o: "𝒐",
+    p: "𝒑",
+    q: "𝒒",
+    r: "𝒓",
+    s: "𝒔",
+    t: "𝒕",
+    u: "𝒖",
+    v: "𝒗",
+    w: "𝒘",
+    x: "𝒙",
+    y: "𝒚",
+    z: "𝒛"
+```
+
+* Insert a symbol by writing `\symbol` and then pressing space, such as `\pi` or `\alpha`# Instacalc Terms of Service
+
+1. **Acceptance of Terms**
+   By using Instacalc, you agree to these Terms of Service.
+
+2. **Public Calculations**
+   - Calculations you choose to make public can be viewed, used, and shared by others.
+   - Instacalc may index, display, and use public calculations for any purpose.
+   - You grant Instacalc a license to use and distribute your public calculations.
+
+3. **Private Calculations**
+   - Private calculations are only accessible to you.
+   - Instacalc will not index, use, or distribute your private calculations.
+
+4. **Content Ownership**
+   You retain ownership of all calculations you create on Instacalc.
+
+5. **Prohibited Content**
+   Do not post illegal or harmful content. We may remove such content and terminate accounts that violate this rule.
+
+6. **Service Changes**
+   We may modify or terminate the service at any time.
+
+7. **Disclaimer**
+   Instacalc is provided "as is" without warranties.
+
+8. **Changes to Terms**
+   We may update these terms. Continued use of Instacalc means you accept any changes.
