@@ -79,10 +79,12 @@ export default defineConfig({
   },
 
   head: [
+    /*
     [
       'script',
       { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=GTM-WKJC6CS' }
     ],
+    */
     [
       'script',
       { src: 'https://instacalc.com/dist/main.min.js' }
