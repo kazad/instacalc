@@ -94,6 +94,19 @@ export default defineConfig({
     [
       'link',
       { hreflocal: 'http://localhost:5002/demo/instacalc.render.css', href: 'https://instacalc.com/demo/instacalc.render.css', rel: 'stylesheet' }
+    ],
+
+    [
+      'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-W8BZXRHEH9' }
+    ],
+    [
+      'script',
+      {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-W8BZXRHEH9');`
     ]
   ],
 
