@@ -323,7 +323,7 @@ Date math
 any order (absolute value)
 200 miles / (jun 1 - sept 1)      = 2.1739 miles/day
 
-Times: HH:MM by defau
+Times: HH:MM by default
 2:15                              = 2:15
 2:15 + 3 hours                    = 5:15
 
