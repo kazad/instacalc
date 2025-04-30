@@ -22,7 +22,7 @@ Instacalc works with most SI units, and you can do comparison as seen above.
 
 ## Imaginary and Complex Numbers
 
-Instacalc has support for complex numbers (a + bi), and in most math functions (trig, log, exp, etc.).
+Instacalc has support for complex numbers (a + bi) for regular arithmetic and most math functions (ln, exp, trig functions, abs value, etc.).
 
 <iframe src="https://instacalc.com/58510/embed" width="100%" height="650" frameborder="0"></iframe>
 
