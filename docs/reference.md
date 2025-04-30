@@ -342,6 +342,47 @@ Adding times keeps original format
 3h 45m + 2h 15m                   = 6h
 ```
 
+## Complex numbers
+
+```
+sqrt(-1)               = i
+e^(pi i) + 1           = 0
+ln(-1)                 = 3.14159265i
+i ^ i                  = 0.20787958
+
+get real and imaginary parts
+z = 3 + 4i             = 3 + 4i
+re(z)                  = 3 or z -> re
+im(z)                  = 4 or z -> im
+abs(z)                 = 5
+|z|                    = 5
+z -> conj              = 3 - 4i
+z -> inverse           = 0.12 - 0.16i
+
+arg(z)                 = 0.92729522 angle (in radians)
+arg(z) rad to deg      = 53.1301 deg
+
+complex arithmetic
+z1 = 3 + 4i            = 3 + 4i
+z2 = 5 + 6i            = 5 + 6i
+z1 + z2                = 8 + 10i
+z1 * z2                = -9 + 38i
+z1 / z2                = 0.63934426 + 0.03278689i
+z1 ^ z2                = -1.86089331 + 11.83676711i
+
+complex functions
+sin(z)                 = 3.85373804 - 27.01681326i
+exp(z)                 = -13.12878308 - 15.20078446i
+ln(z)                  = 1.60943791 + 0.92729522i base e
+log(z)                 = 0.69897 + 0.4027192i base 10
+
+phasor notation
+3 + 4i as phasor       = 5∠53.13
+15∠30                  = 12.99038106 + 7.5i
+15 angle 30            = 12.99038106 + 7.5i
+phasor(2, 25)          = 1.81261557 + 0.84523652i
+```
+
 The following are extracted from the config data file.
 
 ## Number shorthand

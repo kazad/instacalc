@@ -12,3 +12,4 @@ Features are generally announced at: https://github.com/kazad/instacalc/discussi
 * [Excel-style functions](https://github.com/kazad/instacalc/discussions/87)
 * [Insert Greek letters](https://github.com/kazad/instacalc/discussions/30)
 * [Function calls and custom formats](https://github.com/kazad/instacalc/discussions/110)
+* [Imaginary and complex numbers](https://github.com/kazad/instacalc/discussions/121)
