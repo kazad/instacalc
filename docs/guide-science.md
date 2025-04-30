@@ -20,3 +20,10 @@ Instacalc works with most SI units, and you can do comparison as seen above.
 * Make compound units with space or multiplication: `15 kg m/s^2` or `15 kg * m/s^2`
 * See the [predefined constants](/reference.html#predefined-variables) for physics constants (`speed of light`, `gravity`, etc.)
 
+## Imaginary and Complex Numbers
+
+Instacalc has support for complex numbers (a + bi), and in most math functions (trig, log, exp, etc.).
+
+<iframe src="https://instacalc.com/58510/embed" width="100%" height="650" frameborder="0"></iframe>
+
+
