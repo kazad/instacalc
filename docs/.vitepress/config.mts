@@ -50,6 +50,7 @@ export default defineConfig({
         items: [
           { text: 'iPhone / iPad', link: '/app-ios' },
           { text: 'Desktop / Android', link: '/app-pwa' },
+          { text: 'Chrome / Edge', link: '/app-browser' },
         ]
       },
       {
