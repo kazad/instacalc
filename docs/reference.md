@@ -342,7 +342,7 @@ Adding times keeps original format
 3h 45m + 2h 15m                   = 6h
 ```
 
-## Complex numbers
+## [Complex numbers](https://instacalc.com/58510)
 
 ```
 sqrt(-1)               = i
@@ -530,6 +530,12 @@ Demo: https://instacalc.com/57432
     acsch: "acsch(x) | hyperbolic arccosecant of x",
     acoth: "acoth(x) | hyperbolic arccotangent of x",
 
+    re: "re(z) | real part of complex number",
+    im: "im(z) | imaginary part of complex number",
+    arg: "arg(z) | angle of complex number (radians)",
+    angle: "angle(z) | angle of complex number (radians)",
+    phasor: "phasor(magnitude, angle) | build complex number (default degrees) | phasor(3, 90), phasor(2, pi/2 rad)",
+
     abs: "abs(x) | absolute value of x",
     ceil: "ceil(x) | ceiling of x",
     floor: "floor(x) | floor of x",
@@ -549,6 +555,7 @@ Demo: https://instacalc.com/57432
     log10: "log10(x) | log base 10 of x",
     log_10: "log10(x) | log base 10 of x",
     sqrt: "sqrt(x) | square root of x",
+    cbrt: "cuberoot(x) | cube root of x",
     cuberoot: "cuberoot(x) | cube root of x",
     pow: "pow(x, y) | x to power y: x^y",
     root: "root(x) | square root of x",
@@ -670,6 +677,8 @@ Demo: https://instacalc.com/57432
     count: "count(r1:r3) or count(x, y, ...) | count of values",
     percentile: "percentile(r1:r3, p) or percentile(x, y, ..., p) | pth percentile of values",
     percentrank: "percentrank(r1:r3, x, [sig (optional)]) or percentrank(x, y, ..., x) | percent rank of x in values, to [sig] digits (Excel)",
+    sort: "sort(r1:r3) or sort(x, y, ...) | sort values in ascending order",
+    reverse: "reverse(r1:r3) or reverse(x, y, ...) | reverse array of values",
 
     combin: "combination(n, k) | n choose k",
     combination: "combination(n, k) | n choose k",
@@ -692,6 +701,7 @@ Demo: https://instacalc.com/57432
 
     rate: "RATE(nper, pmt, pv, [fv (optional)], [type], [guess]) | interest rate per period of an annuity (Excel)",
     nper: "NPER(rate, pmt, pv, [fv (optional)], [type]) | number of periods for an annuity (Excel)",
+    cagr: "CAGR(start, end value, n) | compound annual growth rate assuming n periods",
 
     rri: "RRI(nper, pv, fv) | interest rate per period of an annuity (Excel)",
     pduration: "PDURATION(rate, pv, fv) | number of periods for an annuity (Excel)",
@@ -709,6 +719,14 @@ Demo: https://instacalc.com/57432
     nchoosek: "nchoosek(n, k) | returns the binomial coefficient of n and k",
 
     sigfig: "sigfig(x, n) | round to n significant figures, sigfig(123.456, 2) = 120",
+    date: "date(year, month, day) | create date (Excel)", /* todo: not appearing since date by itself renders */
+
+    calc: "calc(id) | import calculator by local title ('my calc') or URL ('https://instacalc.com/123')",
+
+    chart: "chart(r1:r3) | line chart of row range | linechart(r1:r3) piechart(r1:r3) barchart(r1:r3)",
+    barchart: "barchart(r1:r3) | bar chart of row range",
+    linechart: "linechart(r1:r3) | line chart of row range",
+    piechart: "piechart(r1:r3) | pie chart of row range",
 ```
 
 Function help appears below your input as you type ([details](https://github.com/kazad/instacalc/discussions/44)).
