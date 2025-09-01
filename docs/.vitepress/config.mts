@@ -80,13 +80,7 @@ export default defineConfig({
   },
 
   head: [
-    /*
-    [
-      'script',
-      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=GTM-WKJC6CS' }
-    ],
-    */
-    [
+   [
       'script',
       { src: 'https://instacalc.com/dist/main.min.js' }
     ],
@@ -101,7 +95,7 @@ export default defineConfig({
 
     [
       'script',
-      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-W8BZXRHEH9' }
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=GTM-WKJC6CS' }
     ],
     [
       'script',
@@ -109,7 +103,7 @@ export default defineConfig({
       `window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-W8BZXRHEH9');`
+      gtag('config', 'GTM-WKJC6CS');`
     ]
   ],
 
