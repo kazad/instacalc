@@ -1,4 +1,4 @@
-// Sample InstaCalc file
+// Sample InstaCalc file from GitHub
 price = 100
 tax_rate = 0.08
 tax = price * tax_rate
