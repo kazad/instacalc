@@ -1,0 +1,10 @@
+// Sample InstaCalc file
+price = 100
+tax_rate = 0.08
+tax = price * tax_rate
+total = price + tax
+
+// Another calculation
+items = 5
+unit_price = 24.99
+subtotal = items * unit_price
